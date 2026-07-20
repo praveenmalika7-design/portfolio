@@ -781,3 +781,9 @@ body { overflow-x: hidden; }
   font-size: 0.88rem;
   line-height: 1.65;
 }
+
+/* -- Fix: JS uses 'revealed' class, style.css uses 'visible' — support both */
+.reveal.revealed {
+  opacity: 1;
+  transform: translate(0, 0);
+}
