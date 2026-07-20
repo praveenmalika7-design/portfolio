@@ -1,0 +1,1832 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of R. A. Praveen Malika Wijerathna — Graduate Mechanical Engineer specialising in industrial automation, machine design, PLC/HMI integration, and manufacturing process improvement." />
+  <meta name="keywords" content="Mechanical Engineering, Graduate Engineer, Industrial Automation, PLC, HMI, SolidWorks, Machine Design, FMCG, Sri Lanka, University of Jaffna" />
+  <meta name="author" content="R. A. Praveen Malika Wijerathna" />
+  <title>Praveen Malika Wijerathna | Graduate Mechanical Engineer</title>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Praveen Malika Wijerathna | Graduate Mechanical Engineer" />
+  <meta property="og:description" content="Graduate Mechanical Engineer with hands-on industrial experience in machine design, manufacturing, process improvement, and engineering project execution." />
+  <meta property="og:type" content="website" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Favicon (inline SVG data URI) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23FF6B35'/><text x='50%25' y='50%25' dominant-baseline='central' text-anchor='middle' fill='white' font-size='18' font-family='sans-serif' font-weight='700'>P</text></svg>" />
+</head>
+
+<body>
+
+  <!-- ══════════════════════════════════════════
+       LOADING SCREEN
+  ══════════════════════════════════════════ -->
+  <div id="loading-screen" role="status" aria-label="Loading portfolio">
+    <div class="loader-logo">R. A. <span>Praveen</span></div>
+    <div class="loader-bar-track">
+      <div class="loader-bar-fill"></div>
+    </div>
+    <div class="loader-label">Initialising Systems…</div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       SCROLL PROGRESS BAR
+  ══════════════════════════════════════════ -->
+  <div id="scroll-progress" role="progressbar" aria-label="Page scroll progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+
+  <!-- ══════════════════════════════════════════
+       NAVIGATION
+  ══════════════════════════════════════════ -->
+  <header>
+    <nav id="navbar" aria-label="Primary navigation">
+      <div class="nav-inner">
+        <!-- Logo -->
+        <a href="#hero" class="nav-logo" aria-label="R. A. Praveen – Home">
+          R. A.<span class="accent"> Praveen</span>
+        </a>
+
+        <!-- Desktop Links -->
+        <ul class="nav-links" role="list">
+          <li><a href="#about"      aria-label="Navigate to About section">About</a></li>
+          <li><a href="#education"  aria-label="Navigate to Education section">Education</a></li>
+          <li><a href="#experience" aria-label="Navigate to Experience section">Experience</a></li>
+          <li><a href="#projects"   aria-label="Navigate to Projects section">Projects</a></li>
+          <li><a href="#skills"     aria-label="Navigate to Skills section">Skills</a></li>
+          <li><a href="#research"   aria-label="Navigate to Research section">Research</a></li>
+          <li><a href="#contact"    aria-label="Navigate to Contact section">Contact</a></li>
+        </ul>
+
+        <!-- Controls -->
+        <div class="nav-controls">
+          <!-- Dark / Light Toggle -->
+          <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light theme">
+            <!-- Moon icon (shown in dark mode) -->
+            <svg id="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+            </svg>
+            <!-- Sun icon (shown in light mode) -->
+            <svg id="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:none;">
+              <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+            </svg>
+          </button>
+
+          <!-- Hamburger (mobile) -->
+          <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-drawer">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile drawer -->
+    <nav class="nav-drawer" id="nav-drawer" aria-label="Mobile navigation" aria-hidden="true">
+      <a href="#about"      class="drawer-link">About</a>
+      <a href="#education"  class="drawer-link">Education</a>
+      <a href="#experience" class="drawer-link">Experience</a>
+      <a href="#projects"   class="drawer-link">Projects</a>
+      <a href="#skills"     class="drawer-link">Skills</a>
+      <a href="#research"   class="drawer-link">Research</a>
+      <a href="#contact"    class="drawer-link">Contact</a>
+    </nav>
+  </header>
+
+  <!-- ══════════════════════════════════════════
+       MAIN CONTENT
+  ══════════════════════════════════════════ -->
+  <main>
+
+    <!-- ─────────────────────────────────────
+         1. HERO SECTION
+    ───────────────────────────────────────── -->
+    <section id="hero" aria-label="Hero introduction">
+
+      <!-- BACKGROUND -->
+      <div class="hero-bg" aria-hidden="true">
+        <div class="hero-bg-img"></div>
+        <div class="hero-bg-overlay"></div>
+        <div class="hero-bg-grid"></div>
+      </div>
+
+      <!-- FLOATING TECH SVGs -->
+      <div class="hero-tech-elements" aria-hidden="true">
+        <div class="tech-vector tv-gear" style="top:12%;left:4%;">
+          <svg width="120" height="80" viewBox="0 0 130 90" fill="none" stroke="currentColor" stroke-width="1.2">
+            <g class="gear-large" style="transform-origin:45px 45px;"><circle cx="45" cy="45" r="10" opacity="0.4"/><circle cx="45" cy="45" r="32"/><path d="M45 13L45 7M45 77L45 83M13 45L7 45M77 45L83 45"/><circle cx="45" cy="45" r="20" stroke-dasharray="2,2" opacity="0.4"/></g>
+            <g class="gear-small" style="transform-origin:95px 45px;"><circle cx="95" cy="45" r="6" opacity="0.4"/><circle cx="95" cy="45" r="21"/><path d="M95 24L95 20M95 66L95 70M74 45L70 45M116 45L120 45"/></g>
+          </svg>
+        </div>
+        <div class="tech-vector tv-plc" style="bottom:15%;left:4%;">
+          <svg width="110" height="120" viewBox="0 0 120 150" fill="none" stroke="currentColor" stroke-width="1.2">
+            <path d="M10 10L50 10L50 60L110 60" opacity="0.3"/>
+            <path d="M10 90L70 90L70 40L110 40" opacity="0.3"/>
+            <path class="circuit-pulse cp-1" d="M10 10L50 10L50 60L110 60"/>
+            <path class="circuit-pulse cp-2" d="M10 90L70 90L70 40L110 40"/>
+            <circle cx="10" cy="10" r="3" fill="currentColor" opacity="0.5"/>
+            <circle cx="10" cy="90" r="3" fill="currentColor" opacity="0.5"/>
+            <rect x="75" y="5" width="35" height="22" rx="2" stroke-dasharray="2,2" opacity="0.4"/>
+            <text x="92" y="19" font-family="monospace" font-size="8" fill="currentColor" opacity="0.6" text-anchor="middle">CPU</text>
+          </svg>
+        </div>
+      </div>
+
+      <!-- MAIN HERO CONTENT -->
+      <div class="hero-content-wrapper">
+        <div class="hero-two-col">
+
+          <!-- LEFT: Text Content -->
+          <div class="hero-left">
+
+            <!-- Available Badge -->
+            <div class="hero-available-badge">
+              <span class="hero-badge-dot"></span>
+              Available for Opportunities
+            </div>
+
+            <!-- Name -->
+            <h1 class="hero-name">
+              <span class="hero-name-first">R. A. Praveen</span>
+              <span class="hero-name-last">Malika Wijerathna</span>
+            </h1>
+
+            <!-- Title line -->
+            <div class="hero-title-line">
+              <span class="hero-dash">—</span>
+              <span class="hero-title-text">Graduate Mechanical Engineer</span>
+              <span class="hero-title-sep"> | </span>
+              <span class="hero-title-uni">University of Jaffna</span>
+            </div>
+
+            <!-- Description -->
+            <p class="hero-desc">
+              Graduate Mechanical Engineer with hands-on industrial experience in machine design, manufacturing, process improvement, and engineering project execution within a high-volume FMCG environment. Experienced in developing industrial equipment, supervising fabrication, coordinating equipment installation and commissioning, and implementing practical engineering solutions. Proficient in SolidWorks, PLC/HMI integration, engineering documentation, and cross-functional collaboration, with a strong commitment to continuous improvement and operational excellence.
+            </p>
+
+            <!-- Buttons -->
+            <div class="hero-btns">
+              <a href="CV_Praveen_new.pdf" class="hero-btn-primary" download="CV_Praveen_new.pdf" aria-label="Download CV as PDF">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                <div class="hero-btn-label">
+                  <strong>Download CV</strong>
+                  <small>CV</small>
+                </div>
+              </a>
+              <a href="mailto:Praveenmalika7@gmail.com?subject=Engineering%20Portfolio%20Inquiry&amp;body=Hello%20Praveen,%0D%0A%0D%0AI%20visited%20your%20engineering%20portfolio%20and%20would%20like%20to%20contact%20you%20regarding%20an%20opportunity.%0D%0A%0D%0ARegards," class="hero-btn-outline" aria-label="Send Email to Praveen">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                Get In Touch
+              </a>
+
+            </div>
+
+            <!-- Stats Row – Glassmorphism Cards -->
+            <div class="hero-stats">
+              <div class="hero-stat-card">
+                <div class="hero-stat-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
+                </div>
+                <div class="hero-stat-val"><span class="hero-stat-num" data-target="1">0</span><span class="hero-stat-sfx">+</span></div>
+                <div class="hero-stat-label">Industrial<br>Experience</div>
+              </div>
+              <div class="hero-stat-card">
+                <div class="hero-stat-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/><path d="M4.93 4.93a10 10 0 0 0 0 14.14"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M8.46 8.46a5 5 0 0 0 0 7.07"/></svg>
+                </div>
+                <div class="hero-stat-val"><span class="hero-stat-num" data-target="5">0</span><span class="hero-stat-sfx">+</span></div>
+                <div class="hero-stat-label">Engineering<br>Projects</div>
+              </div>
+              <div class="hero-stat-card">
+                <div class="hero-stat-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
+                </div>
+                <div class="hero-stat-val"><span class="hero-stat-num" data-target="2">0</span><span class="hero-stat-sfx">×</span></div>
+                <div class="hero-stat-label">IESL<br>Awards</div>
+              </div>
+            </div>
+
+            <!-- Social Icons – Clean horizontal row -->
+            <div class="hero-socials" aria-label="Social media profiles">
+              <a href="http://www.linkedin.com/in/praveen-malika-89613b2a8" target="_blank" rel="noopener noreferrer" class="hero-social-item" aria-label="LinkedIn Profile">
+                <div class="hero-social-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                </div>
+                <span>LinkedIn</span>
+              </a>
+              <a href="mailto:Praveenmalika7@gmail.com?subject=Engineering%20Portfolio%20Inquiry&amp;body=Hello%20Praveen,%0D%0A%0D%0AI%20visited%20your%20engineering%20portfolio%20and%20would%20like%20to%20contact%20you%20regarding%20an%20opportunity.%0D%0A%0D%0ARegards," class="hero-social-item" aria-label="Email Praveen">
+                <div class="hero-social-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </div>
+                <span>Email</span>
+              </a>
+              <a href="https://www.facebook.com/share/1Y6AmAjWGA/" target="_blank" rel="noopener noreferrer" class="hero-social-item" aria-label="Facebook Profile">
+                <div class="hero-social-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                </div>
+                <span>Facebook</span>
+              </a>
+              <a href="tel:+94740797588" class="hero-social-item" aria-label="Phone">
+                <div class="hero-social-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.35 2 2 0 0 1 3.58 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.56a16 16 0 0 0 6.07 6.07l.82-.82a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                </div>
+                <span>0740 797 588</span>
+              </a>
+            </div>
+
+          </div><!-- /hero-left -->
+
+          <!-- RIGHT: Profile Photo -->
+          <div class="hero-right">
+            <div class="hero-profile-wrap">
+              <div class="hero-profile-glow"></div>
+              <div class="hero-profile-ring hero-ring-outer"></div>
+              <div class="hero-profile-ring hero-ring-mid"></div>
+              <div class="hero-profile-img-wrap">
+                <img src="dp.jpeg" alt="R. A. Praveen Malika Wijerathna" class="hero-profile-img" />
+              </div>
+              <div class="hero-orbit-dot"></div>
+            </div>
+          </div><!-- /hero-right -->
+
+        </div><!-- /hero-two-col -->
+      </div><!-- /hero-content-wrapper -->
+
+      <!-- Scroll Indicator -->
+      <div class="hero-scroll-indicator" aria-label="Scroll down">
+        <div class="hero-scroll-mouse"></div>
+        <span>SCROLL DOWN</span>
+      </div>
+
+    </section>
+
+
+    <!-- ─────────────────────────────────────
+         2. ABOUT SECTION
+    ───────────────────────────────────────── -->
+    <section id="about" class="section" aria-labelledby="about-title">
+      <div class="container">
+        <div class="section-label">About Me</div>
+        <h2 class="section-title" id="about-title">Engineering Solutions with <em>Industrial Impact</em></h2>
+
+        <div class="about-grid">
+          <!-- Left: Text -->
+          <div class="about-text reveal">
+            <p>
+              I am a Graduate Mechanical Engineer with hands-on industrial experience in machine design, industrial automation, manufacturing process improvement, and engineering project execution within a high-volume FMCG manufacturing environment. During my internship at Hemas Consumer Brands, I contributed to industrial equipment development, automation system integration, and machine commissioning while collaborating with multidisciplinary engineering teams.
+            </p>
+            <p>
+              My engineering expertise spans the complete project lifecycle — from concept development and 3D modelling in SolidWorks to electrical panel design, PLC/HMI integration, fabrication supervision, equipment installation, commissioning, commercial production trials, and engineering documentation. I enjoy transforming engineering concepts into practical, reliable, and efficient industrial solutions.
+            </p>
+            <p>
+              I have practical experience working collaboratively with Production, Quality Assurance, Research &amp; Development, Safety, and external contractors while applying continuous improvement methodologies including 5S, Kaizen, FMEA, vibration analysis, and structured engineering documentation to improve manufacturing performance.
+            </p>
+            <p>
+              I am passionate about industrial automation, machine design, manufacturing engineering, and continuous innovation, with a strong commitment to developing practical engineering solutions that improve productivity, reliability, and operational excellence.
+            </p>
+
+            <!-- Tool tags -->
+            <div class="about-tools" aria-label="Primary tools">
+              <span class="tool-tag">SolidWorks</span>
+              <span class="tool-tag">Siemens PLC/HMI</span>
+              <span class="tool-tag">MATLAB Simulink</span>
+              <span class="tool-tag">MATLAB Simscape</span>
+              <span class="tool-tag">EPLAN</span>
+              <span class="tool-tag">Servo Drives</span>
+              <span class="tool-tag">VFD Configuration</span>
+              <span class="tool-tag">Machine Design</span>
+              <span class="tool-tag">Industrial Automation</span>
+              <span class="tool-tag">Engineering Documentation</span>
+              <span class="tool-tag">5S</span>
+              <span class="tool-tag">Kaizen</span>
+              <span class="tool-tag">FMEA</span>
+              <span class="tool-tag">Vibration Analysis</span>
+              <span class="tool-tag">Root Cause Analysis</span>
+            </div>
+          </div>
+
+          <!-- Right: Strength cards -->
+          <div class="strength-cards stagger reveal from-right" aria-label="Key strengths">
+            <!-- Card 1 -->
+            <article class="strength-card">
+              <div class="strength-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 3H8"/><path d="M12 3v4"/><circle cx="12" cy="14" r="3"/></svg>
+              </div>
+              <div class="strength-title">Industrial Automation</div>
+              <div class="strength-desc">Integrated Siemens PLC, HMI, servo drives, VFDs, pneumatic systems, and industrial control solutions for manufacturing equipment while supporting commissioning and commercial production.</div>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="strength-card">
+              <div class="strength-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+              </div>
+              <div class="strength-title">Machine Design &amp; Product Development</div>
+              <div class="strength-desc">Designed industrial equipment, machine frameworks, positioning mechanisms, fabrication drawings, engineering documentation, and production-ready assemblies using SolidWorks.</div>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="strength-card">
+              <div class="strength-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+              </div>
+              <div class="strength-title">Industrial Engineering &amp; Commissioning</div>
+              <div class="strength-desc">Supervised fabrication, coordinated contractor activities, managed equipment installation, commissioning, commercial production trials, and engineering implementation across manufacturing operations.</div>
+            </article>
+
+            <!-- Card 4 -->
+            <article class="strength-card">
+              <div class="strength-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              </div>
+              <div class="strength-title">Continuous Improvement</div>
+              <div class="strength-desc">Applied engineering methodologies including 5S, Kaizen, FMEA, vibration analysis, root cause analysis, and structured engineering documentation to improve productivity and operational reliability.</div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─────────────────────────────────────
+         3. EDUCATION SECTION
+    ───────────────────────────────────────── -->
+    <section id="education" class="section" aria-labelledby="education-title">
+      <div class="blueprint-bg" aria-hidden="true"></div>
+      <div class="container" style="position:relative;z-index:1;">
+        <div class="section-label">Education</div>
+        <h2 class="section-title" id="education-title">Academic <em>Foundation</em></h2>
+
+        <article class="edu-card reveal" style="margin-top: var(--space-2xl);">
+          <div class="edu-icon-wrap" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          </div>
+
+          <div class="edu-body">
+            <div class="edu-meta">Apr 2022 – Jul 2026 &nbsp;·&nbsp; <span style="color:var(--clr-success);font-weight:600;">Graduated</span></div>
+            <h3 class="edu-degree">BSc (Hons) in Mechanical and Process Engineering</h3>
+            <p class="edu-institution">University of Jaffna, Sri Lanka</p>
+
+            <div class="edu-detail">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Faculty of Engineering, Jaffna, Sri Lanka
+            </div>
+            <div class="edu-detail">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              Completed 4-Year Honours Degree Programme
+            </div>
+
+            <div class="edu-badge edu-badge-completed" aria-label="Research project completed">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="width:13px;height:13px;flex-shrink:0;"><polyline points="20 6 9 17 4 12"/></svg>
+              Completed Research Project &mdash; Hybrid Powered Thermoelectric Refrigerator
+            </div>
+            <p class="edu-research-desc">Successfully completed an undergraduate research project involving the modelling, development, experimental validation, and performance assessment of a hybrid-powered thermoelectric refrigerator using MATLAB Simulink/Simscape and prototype testing.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ─────────────────────────────────────
+         4. PROFESSIONAL EXPERIENCE
+    ───────────────────────────────────────── -->
+    <section id="experience" class="section" aria-labelledby="experience-title">
+      <div class="container">
+        <div class="section-label">Experience</div>
+        <h2 class="section-title" id="experience-title">Professional <em>Journey</em></h2>
+
+        <div class="timeline mt-2xl reveal">
+          <div class="timeline-item">
+            <div class="timeline-meta">Nov 2025 – May 2026 &nbsp;·&nbsp; Industrial Experience</div>
+            <h3 class="timeline-title">Automation &amp; Machine Design Engineering Intern</h3>
+            <div class="timeline-company">
+              Hemas Consumer Brands
+              <span class="company-badge">Dankotuwa, Sri Lanka</span>
+            </div>
+            <div class="timeline-body">
+              <ul aria-label="Responsibilities and achievements">
+                <li>Executed machine design, industrial automation, and manufacturing improvement projects within a high-volume FMCG manufacturing environment.</li>
+                <li>Engineered mechanical components, developed 3D models, detailed engineering drawings, and technical documentation using SolidWorks.</li>
+                <li>Integrated Siemens PLC and HMI control systems with mechanical equipment to support industrial automation projects.</li>
+                <li>Supervised fabrication activities carried out by outsourced contractors, ensuring quality and compliance with engineering specifications.</li>
+                <li>Executed equipment installation, commissioning, and commercial production trials while coordinating design modifications based on operational feedback.</li>
+                <li>Collaborated closely with Production, Quality Assurance, Research &amp; Development, Safety, and external contractors throughout machine development and implementation.</li>
+                <li>Applied engineering methodologies including 5S, Kaizen, FMEA, vibration analysis, root cause analysis, and structured engineering documentation to support continuous improvement initiatives.</li>
+              </ul>
+            </div>
+
+            <!-- Key Contributions -->
+            <div class="timeline-contributions" aria-label="Key contributions">
+              <div class="timeline-contrib-label">Key Contributions</div>
+              <div class="timeline-contrib-badges">
+                <span class="contrib-badge">Machine Design</span>
+                <span class="contrib-badge">Industrial Automation</span>
+                <span class="contrib-badge">PLC/HMI Integration</span>
+                <span class="contrib-badge">SolidWorks</span>
+                <span class="contrib-badge">Commissioning</span>
+                <span class="contrib-badge">Fabrication Supervision</span>
+                <span class="contrib-badge">Engineering Documentation</span>
+                <span class="contrib-badge">Continuous Improvement</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─────────────────────────────────────
+         5. PROJECTS SECTION
+    ───────────────────────────────────────── -->
+    <section id="projects" class="section" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-label">Featured Projects</div>
+        <h2 class="section-title" id="projects-title">Engineering <em>Highlights</em></h2>
+        <p class="section-subtitle">A selection of industrial and academic projects spanning automation, machine design, and process improvement.</p>
+
+        <!-- ★ FEATURED PROJECT — Semi-Automatic Shampoo Filling Machine -->
+        <div class="featured-project-wrap reveal" id="featured-project-section" aria-label="Featured Project: Semi-Automatic Shampoo Filling Machine">
+
+          <!-- Top accent bar -->
+          <div class="fp-topbar">
+            <span class="fp-topbar-star">★</span>
+            <span class="fp-topbar-text">Featured Project — Flagship Engineering Showcase</span>
+            <span class="fp-topbar-right">Hemas Manufacturing (Pvt.) Ltd. · 2025–2026</span>
+          </div>
+
+          <!-- Compact card header (always visible) -->
+          <div class="fp-header">
+            <div class="fp-header-left">
+              <div class="fp-meta-line">
+                <span>Hemas Manufacturing (Pvt.) Ltd.</span>
+                <span class="fp-meta-dot"></span>
+                <span>Dankotuwa, Sri Lanka</span>
+                <span class="fp-meta-dot"></span>
+                <span>Nov 2025 – May 2026</span>
+                <span class="fp-meta-dot"></span>
+                <span class="fp-status-badge">
+                  <span class="status-dot" aria-hidden="true"></span>
+                  Commercially Commissioned
+                </span>
+              </div>
+
+              <h3 class="fp-title">Semi-Automatic Shampoo Filling Machine Development</h3>
+
+              <p class="fp-summary">
+                An individual industrial internship project completed at Hemas Manufacturing (Pvt.) Ltd., involving the design, development, automation, testing, commissioning, and commercial implementation of a Semi-Automatic Shampoo Filling Machine. The project encompassed complete machine design in SolidWorks, electrical schematic design in EPLAN, electrical control panel assembly, Siemens S7-1500 PLC programming, Siemens HMI development, servo motor and servo drive integration, CIP system implementation, full machine fabrication and commissioning, and successful commercial production trials. The project replaced an existing manual filling process and delivered measurable improvements in productivity, process consistency, operator ergonomics, and cleaning efficiency.
+              </p>
+
+              <div class="fp-tag-row" aria-label="Technologies">
+                <span class="tag">Siemens S7-1500 PLC</span>
+                <span class="tag">Siemens HMI</span>
+                <span class="tag">SolidWorks</span>
+                <span class="tag">EPLAN</span>
+                <span class="tag">Servo Drive</span>
+                <span class="tag">Servo Motor</span>
+                <span class="tag">Pneumatic System</span>
+                <span class="tag">Lobe Pump</span>
+                <span class="tag">CIP System</span>
+                <span class="tag">Electrical Panel</span>
+                <span class="tag">Ladder Logic</span>
+                <span class="tag">Machine Commissioning</span>
+              </div>
+            </div>
+
+            <div class="fp-header-right">
+              <div style="display:flex;flex-wrap:wrap;gap:0.65rem;align-items:center;">
+                <button class="btn btn-primary fp-expand-btn" id="fp-expand-btn"
+                  aria-expanded="false" aria-controls="fp-detail"
+                  aria-label="Expand featured project detail">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                  Explore Project
+                </button>
+                <a href="projects/semi-automatic-shampoo-filling-machine/" class="btn btn-outline" style="display:inline-flex;align-items:center;gap:0.4rem;" aria-label="Open dedicated project page">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:15px;height:15px;"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  Full Project Page
+                </a>
+              </div>
+
+              <!-- 2×2 Mini Image Gallery Preview -->
+              <div class="fp-mini-gallery" id="fp-mini-gallery" aria-label="Project image preview">
+                <div class="fp-mini-gallery-item fp-gallery-item" data-src="real1.jpg" data-caption="Commercial Production Running Using the New Machine" tabindex="0" role="button" aria-label="Commercial Production Running Using the New Machine">
+                  <img src="real1.jpg" alt="Commercial Production Running Using the New Machine" loading="lazy" />
+                  <div class="fp-mini-overlay">Commercial Production</div>
+                </div>
+                <div class="fp-mini-gallery-item fp-gallery-item" data-src="real3.jpg" data-caption="HMI Operation During Commercial Production" tabindex="0" role="button" aria-label="HMI Operation During Commercial Production">
+                  <img src="real3.jpg" alt="HMI Operation During Commercial Production" loading="lazy" />
+                  <div class="fp-mini-overlay">HMI Operation</div>
+                </div>
+                <div class="fp-mini-gallery-item fp-gallery-item" data-src="real4.jpg" data-caption="Lobe Pump Integration in Filling System" tabindex="0" role="button" aria-label="Lobe Pump Integration in Filling System">
+                  <img src="real4.jpg" alt="Lobe Pump Integration in Filling System" loading="lazy" />
+                  <div class="fp-mini-overlay">Lobe Pump Integration</div>
+                </div>
+                <div class="fp-mini-gallery-item fp-gallery-item" data-src="SASF1.png" data-caption="CAD Design of Semi Automatic Shampoo Filling Machine" tabindex="0" role="button" aria-label="CAD Design of Semi Automatic Shampoo Filling Machine">
+                  <img src="SASF1.png" alt="CAD Design of Semi Automatic Shampoo Filling Machine" loading="lazy" />
+                  <div class="fp-mini-overlay">CAD Design</div>
+                </div>
+              </div><!-- /fp-mini-gallery -->
+            </div>
+          </div><!-- /fp-header -->
+
+          <!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+               EXPANDABLE DETAIL PANEL
+          ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+          <div class="fp-detail" id="fp-detail" aria-hidden="true">
+            <div class="fp-detail-inner">
+
+              <!-- ── Engineering Contributions ──────────────── -->
+              <div class="fp-contrib-title">Engineering Contributions</div>
+              <div class="fp-contrib-grid" id="fp-contrib-grid" aria-label="Engineering contributions">
+                <div class="fp-contrib-card"><div class="fp-contrib-check">✔</div><span class="fp-contrib-label">Machine Design</span></div>
+                <div class="fp-contrib-card"><div class="fp-contrib-check">✔</div><span class="fp-contrib-label">SolidWorks Modelling</span></div>
+                <div class="fp-contrib-card"><div class="fp-contrib-check">✔</div><span class="fp-contrib-label">EPLAN Electrical Design</span></div>
+                <div class="fp-contrib-card"><div class="fp-contrib-check">✔</div><span class="fp-contrib-label">Siemens PLC Programming</span></div>
+                <div class="fp-contrib-card"><div class="fp-contrib-check">✔</div><span class="fp-contrib-label">HMI Development</span></div>
+                <div class="fp-contrib-card"><div class="fp-contrib-check">✔</div><span class="fp-contrib-label">Servo Integration</span></div>
+                <div class="fp-contrib-card"><div class="fp-contrib-check">✔</div><span class="fp-contrib-label">CIP Development</span></div>
+                <div class="fp-contrib-card"><div class="fp-contrib-check">✔</div><span class="fp-contrib-label">Electrical Panel Assembly</span></div>
+                <div class="fp-contrib-card"><div class="fp-contrib-check">✔</div><span class="fp-contrib-label">Machine Commissioning</span></div>
+                <div class="fp-contrib-card"><div class="fp-contrib-check">✔</div><span class="fp-contrib-label">Production Trials</span></div>
+                <div class="fp-contrib-card"><div class="fp-contrib-check">✔</div><span class="fp-contrib-label">Troubleshooting</span></div>
+                <div class="fp-contrib-card"><div class="fp-contrib-check">✔</div><span class="fp-contrib-label">Industrial Automation</span></div>
+              </div>
+
+              <!-- ── Tab Navigation ──────────────────────────── -->
+              <div class="fp-tabs-nav" role="tablist" aria-label="Project sections">
+                <button class="fp-tab-btn active" data-tab="overview"   role="tab" aria-selected="true"  id="tab-overview">Overview</button>
+                <button class="fp-tab-btn" data-tab="mechanical"         role="tab" aria-selected="false" id="tab-mechanical">Mechanical Design</button>
+                <button class="fp-tab-btn" data-tab="cip"                role="tab" aria-selected="false" id="tab-cip">CIP System</button>
+                <button class="fp-tab-btn" data-tab="electrical"         role="tab" aria-selected="false" id="tab-electrical">Electrical Design</button>
+                <button class="fp-tab-btn" data-tab="plc"                role="tab" aria-selected="false" id="tab-plc">PLC Programming</button>
+                <button class="fp-tab-btn" data-tab="hmi"                role="tab" aria-selected="false" id="tab-hmi">HMI Development</button>
+                <button class="fp-tab-btn" data-tab="fabrication"        role="tab" aria-selected="false" id="tab-fabrication">Fabrication &amp; Assembly</button>
+                <button class="fp-tab-btn" data-tab="video"              role="tab" aria-selected="false" id="tab-video">Machine Video</button>
+              </div>
+
+              <!-- ┄ Tab 1: Overview ┄ -->
+              <div class="fp-tab-panel active" data-panel="overview" role="tabpanel" aria-labelledby="tab-overview">
+                <p class="fp-tab-desc">
+                  During my internship at Hemas Manufacturing (Pvt.) Ltd., I contributed to the design, development, implementation, testing, and commissioning of a Semi-Automatic Shampoo Filling Machine intended to replace an existing manual filling process used in commercial production. The project involved mechanical design, electrical system development, industrial automation integration, PLC programming, HMI development, machine assembly, commissioning, and commercial production trials. The machine was developed using Siemens S7-1500 PLC, Siemens HMI, servo motors, servo drives, lobe pumps, pneumatic systems, sensors, and custom mechanical components. The electrical control system was designed using EPLAN software, while the machine structure and assemblies were developed using SolidWorks. A dedicated Clean-In-Place (CIP) system was also integrated to improve machine hygiene, cleaning efficiency, and maintenance accessibility. Multiple production trials were conducted in collaboration with Production, Quality Assurance, Safety, and Research &amp; Development teams to validate machine performance and achieve successful commercial implementation.
+                </p>
+
+                <!-- Technical Responsibilities -->
+                <div class="fp-resp-section" style="margin-top:var(--space-xl);">
+                  <div class="fp-contrib-title" style="font-size:var(--text-md);margin-bottom:var(--space-lg);">Technical Responsibilities</div>
+                  <ul class="fp-resp-list" aria-label="Technical responsibilities">
+                    <li><span class="fp-contrib-check" style="width:22px;height:22px;font-size:0.7rem;">✔</span>Machine design and assembly development using SolidWorks</li>
+                    <li><span class="fp-contrib-check" style="width:22px;height:22px;font-size:0.7rem;">✔</span>Design and implementation of CIP cleaning system</li>
+                    <li><span class="fp-contrib-check" style="width:22px;height:22px;font-size:0.7rem;">✔</span>Electrical schematic development using EPLAN</li>
+                    <li><span class="fp-contrib-check" style="width:22px;height:22px;font-size:0.7rem;">✔</span>Electrical control panel assembly</li>
+                    <li><span class="fp-contrib-check" style="width:22px;height:22px;font-size:0.7rem;">✔</span>Siemens S7-1500 PLC hardware configuration</li>
+                    <li><span class="fp-contrib-check" style="width:22px;height:22px;font-size:0.7rem;">✔</span>PLC ladder logic programming</li>
+                    <li><span class="fp-contrib-check" style="width:22px;height:22px;font-size:0.7rem;">✔</span>Siemens HMI development</li>
+                    <li><span class="fp-contrib-check" style="width:22px;height:22px;font-size:0.7rem;">✔</span>Servo motor and servo drive integration</li>
+                    <li><span class="fp-contrib-check" style="width:22px;height:22px;font-size:0.7rem;">✔</span>Pneumatic system integration</li>
+                    <li><span class="fp-contrib-check" style="width:22px;height:22px;font-size:0.7rem;">✔</span>Machine commissioning and troubleshooting</li>
+                    <li><span class="fp-contrib-check" style="width:22px;height:22px;font-size:0.7rem;">✔</span>Production trial execution</li>
+                    <li><span class="fp-contrib-check" style="width:22px;height:22px;font-size:0.7rem;">✔</span>Commercial production implementation</li>
+                    <li><span class="fp-contrib-check" style="width:22px;height:22px;font-size:0.7rem;">✔</span>Cross-functional coordination with Production, QA, Safety, and R&amp;D teams</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- ┄ Tab 2: Mechanical Design ┄ -->
+              <div class="fp-tab-panel" data-panel="mechanical" role="tabpanel" aria-labelledby="tab-mechanical">
+                <p class="fp-tab-desc">
+                  Complete machine design and assembly were developed using SolidWorks, encompassing the frame structure, filling mechanism, servo motor arrangement, bottle conveying system, and full machine integration. The design prioritised ease of maintenance access, hygienic construction, and robust structural integrity suitable for continuous FMCG production operation.
+                </p>
+                <div class="fp-gallery cols-2" data-gallery-id="mechanical">
+                  <div class="fp-gallery-item" data-src="SASF1.png" data-caption="CAD Design of Semi Automatic Shampoo Filling Machine">
+                    <img src="SASF1.png" alt="CAD Design of Semi Automatic Shampoo Filling Machine" loading="lazy" />
+                    <div class="fp-gallery-caption">CAD Design of Semi Automatic Shampoo Filling Machine</div>
+                  </div>
+                  <div class="fp-gallery-item" data-src="SASF2.png" data-caption="CAD Design of Semi Automatic Shampoo Filling Machine">
+                    <img src="SASF2.png" alt="CAD Design of Semi Automatic Shampoo Filling Machine" loading="lazy" />
+                    <div class="fp-gallery-caption">CAD Design of Semi Automatic Shampoo Filling Machine</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ┄ Tab 3: CIP System ┄ -->
+              <div class="fp-tab-panel" data-panel="cip" role="tabpanel" aria-labelledby="tab-cip">
+                <p class="fp-tab-desc">
+                  A custom bracket system was designed and manufactured to implement Clean-In-Place (CIP) functionality directly on the filling machine. The CIP system enables in-situ cleaning of all product-contact surfaces without disassembly, significantly improving machine hygiene standards, reducing cleaning cycle time, minimising contamination risk, and facilitating compliance with food-grade and cosmetic manufacturing sanitation requirements.
+                </p>
+                <div class="fp-gallery cols-2" data-gallery-id="cip">
+                  <div class="fp-gallery-item" data-src="cip.png" data-caption="Bracket Design for CIP Application">
+                    <img src="cip.png" alt="Bracket Design for CIP Application" loading="lazy" />
+                    <div class="fp-gallery-caption">Bracket Design for CIP Application</div>
+                  </div>
+                  <div class="fp-gallery-item" data-src="real2.jpg" data-caption="Designed and Fabricated Bracket for CIP Application">
+                    <img src="real2.jpg" alt="Designed and Fabricated Bracket for CIP Application" loading="lazy" />
+                    <div class="fp-gallery-caption">Designed and Fabricated Bracket for CIP Application</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ┄ Tab 4: Electrical Design ┄ -->
+              <div class="fp-tab-panel" data-panel="electrical" role="tabpanel" aria-labelledby="tab-electrical">
+                <p class="fp-tab-desc">
+                  Electrical schematics and comprehensive control panel documentation were developed using EPLAN Electric P8 software. The documentation package includes circuit diagrams, component layout drawings, cable schedules, and terminal lists, providing a complete technical reference for machine assembly, wiring verification, fault diagnosis, and preventive maintenance activities.
+                </p>
+                <div class="fp-gallery cols-2" data-gallery-id="electrical">
+                  <div class="fp-gallery-item" data-src="e1.png" data-caption="Electrical Drawing of Semi Automatic Shampoo Filling Machine">
+                    <img src="e1.png" alt="Electrical Drawing of Semi Automatic Shampoo Filling Machine" loading="lazy" />
+                    <div class="fp-gallery-caption">Electrical Drawing of Semi Automatic Shampoo Filling Machine</div>
+                  </div>
+                  <div class="fp-gallery-item" data-src="e2.png" data-caption="Electrical Drawing of Semi Automatic Shampoo Filling Machine">
+                    <img src="e2.png" alt="Electrical Drawing of Semi Automatic Shampoo Filling Machine" loading="lazy" />
+                    <div class="fp-gallery-caption">Electrical Drawing of Semi Automatic Shampoo Filling Machine</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ┄ Tab 5: PLC Programming ┄ -->
+              <div class="fp-tab-panel" data-panel="plc" role="tabpanel" aria-labelledby="tab-plc">
+                <p class="fp-tab-desc">
+                  Siemens S7-1200 PLC hardware configuration, I/O mapping, ladder logic programming, filling sequence control, servo axis parameterisation, safety interlock logic, alarm management, and data block management were developed and rigorously tested using the TIA Portal engineering environment. The program architecture was structured to facilitate clear fault diagnosis and straightforward future modifications by maintenance personnel.
+                </p>
+                <div class="fp-gallery cols-4" data-gallery-id="plc">
+                  <div class="fp-gallery-item" data-src="plc1.png" data-caption="PLC Program Development – Network 01">
+                    <img src="plc1.png" alt="PLC Program Development – Network 01" loading="lazy" />
+                    <div class="fp-gallery-caption">PLC Program Development – Network 01</div>
+                  </div>
+                  <div class="fp-gallery-item" data-src="plc2.png" data-caption="PLC Program Development – Network 02">
+                    <img src="plc2.png" alt="PLC Program Development – Network 02" loading="lazy" />
+                    <div class="fp-gallery-caption">PLC Program Development – Network 02</div>
+                  </div>
+                  <div class="fp-gallery-item" data-src="plc3.png" data-caption="PLC Program Development – Network 03">
+                    <img src="plc3.png" alt="PLC Program Development – Network 03" loading="lazy" />
+                    <div class="fp-gallery-caption">PLC Program Development – Network 03</div>
+                  </div>
+                  <div class="fp-gallery-item" data-src="plc4.png" data-caption="PLC Program Development – Network 04">
+                    <img src="plc4.png" alt="PLC Program Development – Network 04" loading="lazy" />
+                    <div class="fp-gallery-caption">PLC Program Development – Network 04</div>
+                  </div>
+                  <div class="fp-gallery-item" data-src="plc6.png" data-caption="PLC Program Development – Network 06">
+                    <img src="plc6.png" alt="PLC Program Development – Network 06" loading="lazy" />
+                    <div class="fp-gallery-caption">PLC Program Development – Network 06</div>
+                  </div>
+                  <div class="fp-gallery-item" data-src="plc7.png" data-caption="PLC Program Development – Network 07">
+                    <img src="plc7.png" alt="PLC Program Development – Network 07" loading="lazy" />
+                    <div class="fp-gallery-caption">PLC Program Development – Network 07</div>
+                  </div>
+                  <div class="fp-gallery-item" data-src="plc8.png" data-caption="PLC Program Development – Network 08">
+                    <img src="plc8.png" alt="PLC Program Development – Network 08" loading="lazy" />
+                    <div class="fp-gallery-caption">PLC Program Development – Network 08</div>
+                  </div>
+                  <div class="fp-gallery-item" data-src="plc9.png" data-caption="PLC Program Development – Network 09">
+                    <img src="plc9.png" alt="PLC Program Development – Network 09" loading="lazy" />
+                    <div class="fp-gallery-caption">PLC Program Development – Network 09</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ┄ Tab 6: HMI Development ┄ -->
+              <div class="fp-tab-panel" data-panel="hmi" role="tabpanel" aria-labelledby="tab-hmi">
+                <p class="fp-tab-desc">
+                  Human Machine Interface screens were designed and developed using Siemens WinCC software to provide a comprehensive operator interface covering machine start/stop operation, production parameter configuration, manual jog control for maintenance activities, real-time alarm monitoring and acknowledgement, and production count management. The interface was designed to minimise operator training requirements and enable rapid fault identification during production runs.
+                </p>
+                <div class="fp-gallery" data-gallery-id="hmi">
+                  <div class="fp-gallery-item" data-src="hmi1.png" data-caption="HMI Welcome Screen Development">
+                    <img src="hmi1.png" alt="HMI Welcome Screen Development" loading="lazy" />
+                    <div class="fp-gallery-caption">HMI Welcome Screen Development</div>
+                  </div>
+                  <div class="fp-gallery-item" data-src="hmi2.png" data-caption="HMI Operation Screen Development">
+                    <img src="hmi2.png" alt="HMI Operation Screen Development" loading="lazy" />
+                    <div class="fp-gallery-caption">HMI Operation Screen Development</div>
+                  </div>
+                  <div class="fp-gallery-item" data-src="hmi3.png" data-caption="Axis Control Screen Development">
+                    <img src="hmi3.png" alt="Axis Control Screen Development" loading="lazy" />
+                    <div class="fp-gallery-caption">Axis Control Screen Development</div>
+                  </div>
+                  <div class="fp-gallery-item" data-src="hmi4.png" data-caption="Recipe Screen Development">
+                    <img src="hmi4.png" alt="Recipe Screen Development" loading="lazy" />
+                    <div class="fp-gallery-caption">Recipe Screen Development</div>
+                  </div>
+                  <div class="fp-gallery-item" data-src="real3.jpg" data-caption="HMI Operation During Commercial Production">
+                    <img src="real3.jpg" alt="HMI Operation During Commercial Production" loading="lazy" />
+                    <div class="fp-gallery-caption">HMI Operation During Commercial Production</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ┄ Tab 7: Fabrication &amp; Assembly ┄ -->
+              <div class="fp-tab-panel" data-panel="fabrication" role="tabpanel" aria-labelledby="tab-fabrication">
+                <p class="fp-tab-desc">
+                  The machine was fabricated, mechanically assembled, electrically wired, and systematically commissioned through a structured series of dry-run, wet-run, and full production trials. Each trial phase identified and resolved integration issues prior to the subsequent phase, ensuring a controlled and documented transition from commissioning to commercial production operation.
+                </p>
+                <div class="fp-gallery" data-gallery-id="fabrication">
+                  <div class="fp-gallery-item" data-src="real1.jpg" data-caption="Commercial Production Running Using the New Machine">
+                    <img src="real1.jpg" alt="Commercial Production Running Using the New Machine" loading="lazy" />
+                    <div class="fp-gallery-caption">Commercial Production Running</div>
+                  </div>
+                  <div class="fp-gallery-item" data-src="real4.jpg" data-caption="Lobe Pump Integration in Filling System">
+                    <img src="real4.jpg" alt="Lobe Pump Integration in Filling System" loading="lazy" />
+                    <div class="fp-gallery-caption">Lobe Pump Integration</div>
+                  </div>
+                  <div class="fp-gallery-item" data-src="SASF5.jpg" data-caption="Control Panel Board of Semi Automatic Shampoo Filling Machine">
+                    <img src="SASF5.jpg" alt="Control Panel Board of Semi Automatic Shampoo Filling Machine" loading="lazy" />
+                    <div class="fp-gallery-caption">Control Panel Board</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ┄ Tab 8: Machine Video ┄ -->
+              <div class="fp-tab-panel" data-panel="video" role="tabpanel" aria-labelledby="tab-video">
+                <div class="fp-video-title">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="22" height="22" aria-hidden="true"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+                  Working Video of Semi Automatic Shampoo Filling Machine
+                </div>
+                <div class="fp-video-wrap" id="fp-video-wrap">
+                  <video id="fp-video" preload="metadata" aria-label="Semi-Automatic Shampoo Filling Machine demonstration video">
+                    <source src="Video1.mp4" type="video/mp4" />
+                    Your browser does not support the HTML5 video element.
+                  </video>
+
+                  <!-- Play overlay -->
+                  <div class="fp-video-play-overlay" id="fp-play-overlay" role="button" aria-label="Play video" tabindex="0">
+                    <div class="play-circle">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                    </div>
+                  </div>
+
+                  <!-- Custom controls -->
+                  <div class="fp-video-controls" id="fp-video-controls">
+                    <div class="fp-video-progress" id="fp-progress" role="slider" aria-label="Video progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" tabindex="0">
+                      <div class="fp-video-progress-fill" id="fp-progress-fill"></div>
+                    </div>
+                    <div class="fp-video-btn-row">
+                      <button class="fp-video-btn" id="fp-play-btn" aria-label="Play / Pause">
+                        <svg id="vp-play-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                        <svg id="vp-pause-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="display:none"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>
+                      </button>
+                      <span class="fp-video-time" id="fp-time">0:00 / 0:00</span>
+                      <button class="fp-video-btn" id="fp-fullscreen-btn" aria-label="Fullscreen">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg>
+                      </button>
+                    </div>
+                  </div>
+                </div><!-- /fp-video-wrap -->
+              </div>
+
+            </div><!-- /fp-detail-inner -->
+          </div><!-- /fp-detail -->
+        </div><!-- /featured-project-wrap -->
+
+        <!-- Lightbox (shared for all galleries) -->
+        <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image lightbox" aria-hidden="true">
+          <button class="lb-close" id="lb-close" aria-label="Close lightbox">&times;</button>
+          <button class="lb-prev"  id="lb-prev"  aria-label="Previous image">&#8249;</button>
+          <button class="lb-next"  id="lb-next"  aria-label="Next image">&#8250;</button>
+          <div class="lb-inner">
+            <div class="lb-img-wrap">
+              <img id="lb-img" src="" alt="" />
+            </div>
+            <div class="lb-caption" id="lb-caption"></div>
+            <div class="lb-counter" id="lb-counter"></div>
+          </div>
+        </div>
+
+
+        <!-- Project cards grid -->
+        <div class="projects-grid stagger" id="projects-grid" aria-label="Project list">
+
+          <!-- ════ PROJECT 2 — Fully Automatic Shampoo Filling Machine Design ════ -->
+          <article class="project-card exp-card" data-category="Design" id="proj-card-2" aria-label="Fully Automatic Shampoo Filling Machine Design">
+            <div class="project-visual" aria-hidden="true" style="padding:0;overflow:hidden;">
+              <div class="project-cat-badge">Machine Design</div>
+              <!-- Carousel: Shampoo Filling Machine -->
+              <div class="eng-carousel" id="carousel-af" aria-label="Shampoo Filling Machine design images">
+                <div class="eng-carousel-track-viewport">
+                  <div class="eng-carousel-track" id="carousel-af-track">
+                    <div class="eng-carousel-slide" data-src="af1.jpg" data-caption="Auto Filling Machine Design Discussion">
+                      <img src="af1.jpg" alt="Auto Filling Machine Design Discussion" loading="lazy" />
+                    </div>
+                    <div class="eng-carousel-slide" data-src="af2.png" data-caption="Frame Design of Auto Filling Machine">
+                      <img src="af2.png" alt="Frame Design of Auto Filling Machine" loading="lazy" />
+                    </div>
+                    <div class="eng-carousel-slide" data-src="af3.png" data-caption="Auto Filling Machine Design">
+                      <img src="af3.png" alt="Auto Filling Machine Design" loading="lazy" />
+                    </div>
+                    <div class="eng-carousel-slide" data-src="af4.png" data-caption="Filling Unit of Auto Filling Machine Design">
+                      <img src="af4.png" alt="Filling Unit of Auto Filling Machine Design" loading="lazy" />
+                    </div>
+                    <div class="eng-carousel-slide" data-src="af5.png" data-caption="Complete Design of Fully Automatic Filling Machine">
+                      <img src="af5.png" alt="Complete Design of Fully Automatic Filling Machine" loading="lazy" />
+                    </div>
+                  </div>
+                </div>
+                <button class="eng-carousel-btn prev" aria-label="Previous image">&#8249;</button>
+                <button class="eng-carousel-btn next" aria-label="Next image">&#8250;</button>
+                <div class="eng-carousel-dots" id="carousel-af-dots"></div>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="proj-num-badge">PROJECT 02</div>
+              <h3 class="project-title">Fully Automatic Shampoo Filling Machine Design</h3>
+              <div class="proj-cat-tags">
+                <span class="proj-cat-pill">Machine Design</span>
+                <span class="proj-cat-pill">Industrial Automation</span>
+              </div>
+              <p class="project-desc">
+                Contributed to the conceptualization and mechanical design of a Fully Automatic Shampoo Filling Machine intended for future industrial implementation, incorporating servo-driven positioning systems, bottle handling mechanisms, and conveyor synchronization principles.
+              </p>
+              <div class="project-tags" aria-label="Technologies used">
+                <span class="tag">SolidWorks</span>
+                <span class="tag">Servo Systems</span>
+                <span class="tag">Conveyor Design</span>
+                <span class="tag">Mechanical Design</span>
+                <span class="tag">Safety Engineering</span>
+              </div>
+              <div class="proj-card-footer">
+                <span class="proj-status-pill proj-status-progress">Design Phase</span>
+                <a href="projects/fully-automatic-shampoo-filling-machine/" class="btn btn-outline" style="display:inline-flex;align-items:center;gap:0.4rem;" aria-label="View full project page">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:15px;height:15px;"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  View Full Page
+                </a>
+              </div>
+            </div>
+            <!-- Expandable detail -->
+            <div class="proj-detail" id="proj-detail-2" aria-hidden="true">
+              <div class="proj-detail-inner">
+                <div class="proj-desc-block">
+                  <div class="proj-section-label">Project Description</div>
+                  <p class="proj-full-desc">
+                    Contributed to the conceptualization and mechanical design of a Fully Automatic Shampoo Filling Machine intended for future industrial implementation. The project involved the development of machine structures, filling mechanisms, bottle handling systems, conveyor arrangements, and automated motion systems using SolidWorks. The design incorporated servo-driven positioning systems, bottle gripping mechanisms, conveyor synchronization concepts, safety systems, and automated production line integration principles. The project remains in the design optimization stage for future fabrication and implementation.
+                  </p>
+                </div>
+                <div class="proj-tech-block">
+                  <div class="proj-section-label">Technologies Used</div>
+                  <div class="proj-tech-flex">
+                    <span class="proj-tech-badge">SolidWorks</span>
+                    <span class="proj-tech-badge">Servo Systems</span>
+                    <span class="proj-tech-badge">Conveyor Systems</span>
+                    <span class="proj-tech-badge">Mechanical Design</span>
+                    <span class="proj-tech-badge">Industrial Automation</span>
+                    <span class="proj-tech-badge">Safety Engineering</span>
+                  </div>
+                </div>
+                <div class="proj-media-block">
+                  <div class="proj-section-label">Project Media</div>
+                  <div class="fp-gallery cols-3" data-gallery-id="automatic-filling" style="margin-bottom: var(--space-lg);">
+                    <div class="fp-gallery-item" data-src="af1.jpg" data-caption="Auto Filling Machine Design Discussion">
+                      <img src="af1.jpg" alt="Auto Filling Machine Design Discussion" loading="lazy" />
+                      <div class="fp-gallery-caption">Auto Filling Machine Design Discussion</div>
+                    </div>
+                    <div class="fp-gallery-item" data-src="af2.png" data-caption="Frame Design of Auto Filling Machine">
+                      <img src="af2.png" alt="Frame Design of Auto Filling Machine" loading="lazy" />
+                      <div class="fp-gallery-caption">Frame Design of Auto Filling Machine</div>
+                    </div>
+                    <div class="fp-gallery-item" data-src="af3.png" data-caption="Auto Filling Machine Design">
+                      <img src="af3.png" alt="Auto Filling Machine Design" loading="lazy" />
+                      <div class="fp-gallery-caption">Auto Filling Machine Design</div>
+                    </div>
+                    <div class="fp-gallery-item" data-src="af4.png" data-caption="Filling Unit of Auto Filling Machine Design">
+                      <img src="af4.png" alt="Filling Unit of Auto Filling Machine Design" loading="lazy" />
+                      <div class="fp-gallery-caption">Filling Unit of Auto Filling Machine Design</div>
+                    </div>
+                    <div class="fp-gallery-item" data-src="af5.png" data-caption="Complete Design of Fully Automatic Filling Machine">
+                      <img src="af5.png" alt="Complete Design of Fully Automatic Filling Machine" loading="lazy" />
+                      <div class="fp-gallery-caption">Complete Design of Fully Automatic Filling Machine</div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- ════ PROJECT 3 — Cap Feeder and Elevator Machine ════ -->
+          <article class="project-card exp-card" data-category="Manufacturing" id="proj-card-3" aria-label="Cap Feeder and Elevator Machine Implementation">
+            <div class="project-visual" aria-hidden="true" style="padding:0;overflow:hidden;">
+              <div class="project-cat-badge">Manufacturing</div>
+              <img src="cf2.png" alt="Cap Dispensing Mechanism to Bottles" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy" />
+            </div>
+            <div class="project-content">
+              <div class="proj-num-badge">PROJECT 03</div>
+              <h3 class="project-title">Cap Feeder &amp; Elevator Machine Implementation</h3>
+              <div class="proj-cat-tags">
+                <span class="proj-cat-pill">Manufacturing Automation</span>
+                <span class="proj-cat-pill">Machine Integration</span>
+              </div>
+              <p class="project-desc">
+                Participated in the installation, modification, and commissioning of an imported Cap Feeder and Elevator Machine for the cream production line, including custom cap dispensing mechanism development using additive manufacturing techniques.
+              </p>
+              <div class="project-tags" aria-label="Technologies used">
+                <span class="tag">SolidWorks</span>
+                <span class="tag">3D Printing</span>
+                <span class="tag">Machine Integration</span>
+                <span class="tag">Production Trials</span>
+              </div>
+              <div class="proj-card-footer">
+                <span class="proj-status-pill proj-status-done">Commissioned</span>
+                <a href="projects/cap-feeder-elevator-machine/" class="btn btn-outline" style="display:inline-flex;align-items:center;gap:0.4rem;" aria-label="View full project page">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:15px;height:15px;"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  View Full Page
+                </a>
+              </div>
+            </div>
+            <div class="proj-detail" id="proj-detail-3" aria-hidden="true">
+              <div class="proj-detail-inner">
+                <div class="proj-desc-block">
+                  <div class="proj-section-label">Project Description</div>
+                  <p class="proj-full-desc">
+                    Participated in the installation, modification, and commissioning of an imported Cap Feeder and Elevator Machine for the cream production line. The project involved adapting the imported equipment to existing manufacturing processes and production requirements. Custom cap dispensing mechanisms were designed using SolidWorks and manufactured using additive manufacturing techniques. Multiple production trials were conducted to validate machine performance, reliability, and process integration.
+                  </p>
+                </div>
+                <div class="proj-tech-block">
+                  <div class="proj-section-label">Technologies Used</div>
+                  <div class="proj-tech-flex">
+                    <span class="proj-tech-badge">SolidWorks</span>
+                    <span class="proj-tech-badge">3D Printing</span>
+                    <span class="proj-tech-badge">Machine Installation</span>
+                    <span class="proj-tech-badge">Manufacturing Automation</span>
+                    <span class="proj-tech-badge">Production Trials</span>
+                  </div>
+                </div>
+                <div class="proj-media-block">
+                  <div class="proj-section-label">Project Media</div>
+                  <div class="fp-gallery cols-3" data-gallery-id="cap-feeder" style="margin-bottom: var(--space-lg);">
+                    <div class="fp-gallery-item" data-src="cf1.jpg" data-caption="Cap Dispenser Design and 3D Printed Component">
+                      <img src="cf1.jpg" alt="Cap Dispenser Design and 3D Printed Component" loading="lazy" />
+                      <div class="fp-gallery-caption">Cap Dispenser Design and 3D Printed Component</div>
+                    </div>
+                    <div class="fp-gallery-item" data-src="cf2.png" data-caption="Cap Dispensing Mechanism to Bottles">
+                      <img src="cf2.png" alt="Cap Dispensing Mechanism to Bottles" loading="lazy" />
+                      <div class="fp-gallery-caption">Cap Dispensing Mechanism to Bottles</div>
+                    </div>
+                    <div class="fp-gallery-item" data-src="cf3.jpg" data-caption="Vision System of Cap Feeder Machine">
+                      <img src="cf3.jpg" alt="Vision System of Cap Feeder Machine" loading="lazy" />
+                      <div class="fp-gallery-caption">Vision System of Cap Feeder Machine</div>
+                    </div>
+                  </div>
+                  
+                  <div class="fp-video-title" style="margin-top: var(--space-xl); margin-bottom: var(--space-md);">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="22" height="22" aria-hidden="true"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+                    Cap Releasing Demonstration Video
+                  </div>
+                  <div class="fp-video-wrap" id="cf-video-wrap">
+                    <video preload="metadata" aria-label="Cap Feeder &amp; Elevator machine trial video">
+                      <source src="cfvideo.mp4" type="video/mp4" />
+                      Your browser does not support the HTML5 video element.
+                    </video>
+
+                    <!-- Play overlay -->
+                    <div class="fp-video-play-overlay" role="button" aria-label="Play video" tabindex="0">
+                      <div class="play-circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                      </div>
+                    </div>
+
+                    <!-- Custom controls -->
+                    <div class="fp-video-controls">
+                      <div class="fp-video-progress" role="slider" aria-label="Video progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" tabindex="0">
+                        <div class="fp-video-progress-fill"></div>
+                      </div>
+                      <div class="fp-video-btn-row">
+                        <button class="fp-video-btn vp-play-btn" aria-label="Play / Pause">
+                          <svg class="vp-play-icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                          <svg class="vp-pause-icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="display:none"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>
+                        </button>
+                        <span class="fp-video-time fp-time-display">0:00 / 0:00</span>
+                        <button class="fp-video-btn vp-fullscreen-btn" aria-label="Fullscreen">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- ════ PROJECT 4 — Conveyor System Development ════ -->
+          <article class="project-card exp-card" data-category="Automation" id="proj-card-4" aria-label="Conveyor System Development">
+            <div class="project-visual" aria-hidden="true" style="padding:0;overflow:hidden;">
+              <div class="project-cat-badge">Automation</div>
+              <!-- Carousel: Conveyor System -->
+              <div class="eng-carousel" id="carousel-cn" aria-label="Conveyor System project images">
+                <div class="eng-carousel-track-viewport">
+                  <div class="eng-carousel-track" id="carousel-cn-track">
+                    <div class="eng-carousel-slide" data-src="cn1.jpg" data-caption="Conveyor Frame">
+                      <img src="cn1.jpg" alt="Conveyor Frame" loading="lazy" />
+                    </div>
+                    <div class="eng-carousel-slide" data-src="cn2.jpg" data-caption="Fully Developed Conveyor System">
+                      <img src="cn2.jpg" alt="Fully Developed Conveyor System" loading="lazy" />
+                    </div>
+                    <div class="eng-carousel-slide" data-src="cn3.jpg" data-caption="Control Panel Board of Conveyor System">
+                      <img src="cn3.jpg" alt="Control Panel Board of Conveyor System" loading="lazy" />
+                    </div>
+                  </div>
+                </div>
+                <button class="eng-carousel-btn prev" aria-label="Previous image">&#8249;</button>
+                <button class="eng-carousel-btn next" aria-label="Next image">&#8250;</button>
+                <div class="eng-carousel-dots" id="carousel-cn-dots"></div>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="proj-num-badge">PROJECT 04</div>
+              <h3 class="project-title">Conveyor System Development</h3>
+              <div class="proj-cat-tags">
+                <span class="proj-cat-pill">Industrial Automation</span>
+                <span class="proj-cat-pill">Electrical Systems</span>
+              </div>
+              <p class="project-desc">
+                Designed and developed a 20-foot industrial conveyor system incorporating mechanical structure design, electrical panel construction, VFD motor control implementation, and full system commissioning for controlled material handling applications.
+              </p>
+              <div class="project-tags" aria-label="Technologies used">
+                <span class="tag">VFD Configuration</span>
+                <span class="tag">Electrical Panel</span>
+                <span class="tag">Motor Control</span>
+                <span class="tag">Mechanical Design</span>
+                <span class="tag">Industrial Automation</span>
+              </div>
+              <div class="proj-card-footer">
+                <span class="proj-status-pill proj-status-done">Commissioned</span>
+                <button class="btn btn-outline proj-expand-btn" data-proj="proj-detail-4" aria-expanded="false" aria-controls="proj-detail-4">
+                  <span class="btn-text">View Details</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+              </div>
+            </div>
+            <div class="proj-detail" id="proj-detail-4" aria-hidden="true">
+              <div class="proj-detail-inner">
+                <div class="proj-desc-block">
+                  <div class="proj-section-label">Project Description</div>
+                  <p class="proj-full-desc">
+                    Designed and developed a 20-foot industrial conveyor system for material handling applications. The project included mechanical structure design, conveyor assembly, electrical control panel construction, motor control implementation, and system commissioning. The system incorporated variable frequency drive technology to achieve controlled conveyor operation while ensuring operational safety, reliability, and process efficiency.
+                  </p>
+                </div>
+                <div class="proj-tech-block">
+                  <div class="proj-section-label">Technologies Used</div>
+                  <div class="proj-tech-flex">
+                    <span class="proj-tech-badge">Mechanical Design</span>
+                    <span class="proj-tech-badge">VFD Configuration</span>
+                    <span class="proj-tech-badge">Electrical Panel Design</span>
+                    <span class="proj-tech-badge">Motor Control</span>
+                    <span class="proj-tech-badge">Industrial Automation</span>
+                  </div>
+                </div>
+                <div class="proj-media-block">
+                  <div class="proj-section-label">Project Media</div>
+                  <div class="fp-gallery cols-3" data-gallery-id="conveyor-system" style="margin-bottom: var(--space-lg);">
+                    <div class="fp-gallery-item" data-src="cn1.jpg" data-caption="Conveyor Frame">
+                      <img src="cn1.jpg" alt="Conveyor Frame" loading="lazy" />
+                      <div class="fp-gallery-caption">Conveyor Frame</div>
+                    </div>
+                    <div class="fp-gallery-item" data-src="cn2.jpg" data-caption="Fully Developed Conveyor System">
+                      <img src="cn2.jpg" alt="Fully Developed Conveyor System" loading="lazy" />
+                      <div class="fp-gallery-caption">Fully Developed Conveyor System</div>
+                    </div>
+                    <div class="fp-gallery-item" data-src="cn3.jpg" data-caption="Control Panel Board of Conveyor System">
+                      <img src="cn3.jpg" alt="Control Panel Board of Conveyor System" loading="lazy" />
+                      <div class="fp-gallery-caption">Control Panel Board of Conveyor System</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- ════ PROJECT 5 — Master Bag Packing Machine Improvement ════ -->
+          <article class="project-card exp-card" data-category="Process" id="proj-card-5" aria-label="Master Bag Packing Machine Control System Improvement">
+            <div class="project-visual" aria-hidden="true" style="padding:0;overflow:hidden;">
+              <div class="project-cat-badge">Process</div>
+              <!-- Carousel: Master Bag Packing -->
+              <div class="eng-carousel" id="carousel-sn" aria-label="Master Bag Packing machine images">
+                <div class="eng-carousel-track-viewport">
+                  <div class="eng-carousel-track" id="carousel-sn-track">
+                    <div class="eng-carousel-slide" data-src="sn1.png" data-caption="Pad Rotation Unit Implementation">
+                      <img src="sn1.png" alt="Pad Rotation Unit Implementation" loading="lazy" />
+                    </div>
+                    <div class="eng-carousel-slide" data-src="sn2.jpg" data-caption="Pad Rotation Unit with Master Bag Packing Machine">
+                      <img src="sn2.jpg" alt="Pad Rotation Unit with Master Bag Packing Machine" loading="lazy" />
+                    </div>
+                  </div>
+                </div>
+                <button class="eng-carousel-btn prev" aria-label="Previous image">&#8249;</button>
+                <button class="eng-carousel-btn next" aria-label="Next image">&#8250;</button>
+                <div class="eng-carousel-dots" id="carousel-sn-dots"></div>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="proj-num-badge">PROJECT 05</div>
+              <h3 class="project-title">Master Bag Packing Machine Control System Improvement</h3>
+              <div class="proj-cat-tags">
+                <span class="proj-cat-pill">Process Improvement</span>
+                <span class="proj-cat-pill">Industrial Automation</span>
+              </div>
+              <p class="project-desc">
+                Contributed to a Kaizen-driven process improvement initiative by modifying the master bag packing machine control logic to enable automatic packet rotation, eliminating manual intervention and improving production line efficiency.
+              </p>
+              <div class="project-tags" aria-label="Technologies used">
+                <span class="tag">PLC Programming</span>
+                <span class="tag">Process Improvement</span>
+                <span class="tag">Kaizen</span>
+                <span class="tag">Industrial Engineering</span>
+              </div>
+              <div class="proj-card-footer">
+                <span class="proj-status-pill proj-status-done">Implemented</span>
+                <a href="projects/master-bag-packing-machine/" class="btn btn-outline" style="display:inline-flex;align-items:center;gap:0.4rem;" aria-label="View full project page">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:15px;height:15px;"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  View Full Page
+                </a>
+              </div>
+            </div>
+            <div class="proj-detail" id="proj-detail-5" aria-hidden="true">
+              <div class="proj-detail-inner">
+                <div class="proj-desc-block">
+                  <div class="proj-section-label">Project Description</div>
+                  <p class="proj-full-desc">
+                    Contributed to a process improvement initiative within the sanitary napkin production line by modifying the control logic of the master bag packing process to enable automatic packet rotation before entering the packaging stage. The implemented solution reduced manual intervention, improved process consistency, enhanced production efficiency, and supported continuous improvement objectives aligned with Kaizen and industrial engineering best practices.
+                  </p>
+                </div>
+                <div class="proj-tech-block">
+                  <div class="proj-section-label">Technologies Used</div>
+                  <div class="proj-tech-flex">
+                    <span class="proj-tech-badge">PLC Programming</span>
+                    <span class="proj-tech-badge">Process Improvement</span>
+                    <span class="proj-tech-badge">Manufacturing Automation</span>
+                    <span class="proj-tech-badge">Kaizen</span>
+                    <span class="proj-tech-badge">Industrial Engineering</span>
+                  </div>
+                </div>
+                <div class="proj-media-block">
+                  <div class="proj-section-label">Project Gallery</div>
+                  <div class="fp-gallery cols-2" data-gallery-id="master-bag" style="margin-bottom: var(--space-lg);">
+                    <div class="fp-gallery-item" data-src="sn1.png" data-caption="Pad Rotation Unit Implementation">
+                      <img src="sn1.png" alt="Pad Rotation Unit Implementation" loading="lazy" />
+                      <div class="fp-gallery-caption">Pad Rotation Unit Implementation</div>
+                    </div>
+                    <div class="fp-gallery-item" data-src="sn2.jpg" data-caption="Pad Rotation Unit with Master Bag Packing Machine">
+                      <img src="sn2.jpg" alt="Pad Rotation Unit with Master Bag Packing Machine" loading="lazy" />
+                      <div class="fp-gallery-caption">Pad Rotation Unit with Master Bag Packing Machine</div>
+                    </div>
+                  </div>
+
+                  <div class="fp-video-title" style="margin-top: var(--space-xl); margin-bottom: var(--space-md);">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="22" height="22" aria-hidden="true"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+                    Machine Demonstration Video
+                  </div>
+                  <div class="fp-video-wrap" id="mb-video-wrap">
+                    <video preload="metadata" aria-label="Master Bag Packing machine demonstration video">
+                      <source src="mb.mp4" type="video/mp4" />
+                      Your browser does not support the HTML5 video element.
+                    </video>
+                    <div class="fp-video-play-overlay" role="button" aria-label="Play video" tabindex="0">
+                      <div class="play-circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                      </div>
+                    </div>
+                    <div class="fp-video-controls">
+                      <div class="fp-video-progress" role="slider" aria-label="Video progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" tabindex="0">
+                        <div class="fp-video-progress-fill"></div>
+                      </div>
+                      <div class="fp-video-btn-row">
+                        <button class="fp-video-btn vp-play-btn" aria-label="Play / Pause">
+                          <svg class="vp-play-icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                          <svg class="vp-pause-icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="display:none"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>
+                        </button>
+                        <span class="fp-video-time fp-time-display">0:00 / 0:00</span>
+                        <button class="fp-video-btn vp-fullscreen-btn" aria-label="Fullscreen">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div><!-- /.projects-grid -->
+      </div>
+    </section>
+
+    <!-- ─────────────────────────────────────
+         6. TECHNICAL SKILLS
+    ───────────────────────────────────────── -->
+    <section id="skills" class="section" aria-labelledby="skills-title">
+      <div class="blueprint-bg" aria-hidden="true"></div>
+      <div class="container" style="position:relative;z-index:1;">
+        <div class="section-label">Technical Skills</div>
+        <h2 class="section-title" id="skills-title">Tools &amp; <em>Competencies</em></h2>
+
+        <div class="skills-grid mt-2xl stagger" id="skills-grid">
+
+          <!-- CAD & Design -->
+          <div class="skill-category">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+              </div>
+              <div class="skill-cat-name">CAD &amp; Design Software</div>
+            </div>
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-header"><span class="skill-name">SolidWorks</span><span class="skill-pct">88%</span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="88"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header"><span class="skill-name">EPLAN</span><span class="skill-pct">72%</span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="72"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Simulation -->
+          <div class="skill-category">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+              </div>
+              <div class="skill-cat-name">Simulation Software</div>
+            </div>
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-header"><span class="skill-name">MATLAB Simscape</span><span class="skill-pct">80%</span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="80"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header"><span class="skill-name">MATLAB Simulink</span><span class="skill-pct">78%</span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="78"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header"><span class="skill-name">LabVIEW</span><span class="skill-pct">60%</span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="60"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Automation & Control -->
+          <div class="skill-category">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 3H8"/><path d="M12 3v4"/><circle cx="12" cy="14" r="3"/></svg>
+              </div>
+              <div class="skill-cat-name">Automation &amp; Control</div>
+            </div>
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-header"><span class="skill-name">Siemens PLC</span><span class="skill-pct">85%</span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header"><span class="skill-name">HMI Programming</span><span class="skill-pct">82%</span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="82"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header"><span class="skill-name">Servo Drives / VFD Config.</span><span class="skill-pct">70%</span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="70"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header"><span class="skill-name">Haiwell PLC</span><span class="skill-pct">65%</span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="65"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Electrical Systems -->
+          <div class="skill-category">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+              </div>
+              <div class="skill-cat-name">Electrical Systems</div>
+            </div>
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-header"><span class="skill-name">Control Panel Design</span><span class="skill-pct">80%</span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="80"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header"><span class="skill-name">Electrical Documentation (EPLAN)</span><span class="skill-pct">72%</span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="72"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Manufacturing & Process -->
+          <div class="skill-category">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M4.93 4.93a10 10 0 0 0 0 14.14"/></svg>
+              </div>
+              <div class="skill-cat-name">Manufacturing &amp; Process Improvement</div>
+            </div>
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-header"><span class="skill-name">5S / Kaizen</span><span class="skill-pct">85%</span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header"><span class="skill-name">FMEA</span><span class="skill-pct">75%</span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="75"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header"><span class="skill-name">CIP Methodology</span><span class="skill-pct">78%</span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="78"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header"><span class="skill-name">Vibration Analysis</span><span class="skill-pct">65%</span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="65"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Engineering Analysis -->
+          <div class="skill-category">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+              </div>
+              <div class="skill-cat-name">Engineering Analysis &amp; Other Tools</div>
+            </div>
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-header"><span class="skill-name">Statistical Validation</span><span class="skill-pct">75%</span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="75"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header"><span class="skill-name">Component-Level Simulation</span><span class="skill-pct">80%</span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="80"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header"><span class="skill-name">Microsoft Project / MS Office</span><span class="skill-pct">82%</span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="82"></div></div>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /.skills-grid -->
+      </div>
+    </section>
+
+    <!-- ─────────────────────────────────────
+         7. AWARDS / CERTIFICATIONS
+    ───────────────────────────────────────── -->
+    <section id="awards" class="section" aria-labelledby="awards-title">
+      <div class="container">
+        <div class="section-label">Awards &amp; Recognition</div>
+        <h2 class="section-title" id="awards-title">Achievements &amp; <em>Milestones</em></h2>
+
+        <div class="awards-grid mt-2xl stagger">
+          <article class="award-card">
+            <div class="award-medal" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
+            </div>
+            <div class="award-org">IESL Sri Lanka</div>
+            <h3 class="award-title">Bronze Award — IESL Techno Exhibition</h3>
+            <p class="award-desc" style="text-align:justify;">
+              Awarded the Bronze Award by the Institution of Engineers Sri Lanka (IESL) for outstanding engineering project demonstration. Represented the University of Jaffna at the national Techno Exhibition, serving as Team Leader in 2024 and Demonstrator in 2023.
+            </p>
+            <div class="award-years">
+              <span class="year-badge">2023</span>
+              <span class="year-badge">2024</span>
+            </div>
+          </article>
+        </div>
+
+        <!-- Achievements Photo Gallery -->
+        <div class="research-gallery-label" style="margin-top: var(--space-2xl); margin-bottom: var(--space-md); font-family: var(--font-mono); font-size: var(--text-xs); letter-spacing: 0.1em; text-transform: uppercase; color: var(--clr-accent);">Achievement Gallery</div>
+        <div class="fp-gallery cols-3 reveal" data-gallery-id="achievements-gallery">
+          <div class="fp-gallery-item" data-src="techno1.jpg" data-caption="Bronze Award – IESL Techno Exhibition 2023">
+            <img src="techno1.jpg" alt="Bronze Award – IESL Techno Exhibition 2023" loading="lazy" />
+            <div class="fp-gallery-caption">Bronze Award – IESL Techno Exhibition 2023</div>
+          </div>
+          <div class="fp-gallery-item" data-src="techno2.jpg" data-caption="Bronze Award – IESL Techno Exhibition 2024">
+            <img src="techno2.jpg" alt="Bronze Award – IESL Techno Exhibition 2024" loading="lazy" />
+            <div class="fp-gallery-caption">Bronze Award – IESL Techno Exhibition 2024</div>
+          </div>
+          <div class="fp-gallery-item" data-src="techno3.jpg" data-caption="Techno Exhibition 2024">
+            <img src="techno3.jpg" alt="Techno Exhibition 2024" loading="lazy" />
+            <div class="fp-gallery-caption">Techno Exhibition 2024</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─────────────────────────────────────
+         8. LEADERSHIP & ACTIVITIES
+    ───────────────────────────────────────── -->
+    <section id="leadership" class="section" aria-labelledby="leadership-title">
+      <div class="blueprint-bg" aria-hidden="true"></div>
+      <div class="container" style="position:relative;z-index:1;">
+        <div class="section-label">Leadership &amp; Activities</div>
+        <h2 class="section-title" id="leadership-title">Community <em>Engagement</em></h2>
+
+        <div class="leadership-layout mt-2xl">
+
+          <!-- LEFT: Timeline -->
+          <div class="leadership-timeline-col reveal">
+            <div class="leadership-timeline">
+
+              <div class="leadership-item">
+                <div class="lead-period">Feb 2025 – Nov 2025</div>
+                <div class="lead-role">Acting President</div>
+                <div class="lead-org">Engineering Students' Union, University of Jaffna</div>
+              </div>
+
+              <div class="leadership-item">
+                <div class="lead-period">Oct 2024 – Feb 2025</div>
+                <div class="lead-role">Vice President</div>
+                <div class="lead-org">Engineering Students' Union, University of Jaffna</div>
+              </div>
+
+              <div class="leadership-item">
+                <div class="lead-period">2023 – 2024</div>
+                <div class="lead-role">Vice President</div>
+                <div class="lead-org">Mechanical Engineering Society, University of Jaffna</div>
+              </div>
+
+              <div class="leadership-item">
+                <div class="lead-period">2021 – 2022</div>
+                <div class="lead-role">President</div>
+                <div class="lead-org">Divisional Federation of Youth Clubs, Madulla Division &mdash; Sri Lanka Youth</div>
+              </div>
+
+            </div>
+          </div><!-- /leadership-timeline-col -->
+
+          <!-- RIGHT: Leadership Gallery -->
+          <div class="leadership-gallery-col reveal from-right">
+            <div class="lead-gallery" aria-label="Leadership gallery">
+
+              <!-- Featured image (top, large) -->
+              <div class="lead-gallery-item lead-gallery-featured"
+                   data-src="Uni1.jpeg"
+                   data-caption="Engineering Week Closing Ceremony 2025 — Representing the Engineering Students' Union during the Engineering Week Closing Ceremony 2025."
+                   tabindex="0" role="button"
+                   aria-label="Engineering Week Closing Ceremony 2025">
+                <img src="Uni1.jpeg" alt="Engineering Week Closing Ceremony 2025" loading="lazy" />
+                <div class="lead-gallery-overlay">
+                  <div class="lead-gallery-title">Engineering Week Closing Ceremony 2025</div>
+                  <div class="lead-gallery-desc">Representing the Engineering Students' Union during the Engineering Week Closing Ceremony 2025.</div>
+                </div>
+              </div>
+
+              <!-- Two smaller images below -->
+              <div class="lead-gallery-row">
+
+                <div class="lead-gallery-item"
+                     data-src="Uni2.jpeg"
+                     data-caption="Infrastructure Development Meeting with the Prime Minister — Represented university students during infrastructure development discussions with the Hon. Prime Minister of Sri Lanka."
+                     tabindex="0" role="button"
+                     aria-label="Infrastructure Development Meeting with the Prime Minister">
+                  <img src="Uni2.jpeg" alt="Infrastructure Development Meeting with the Prime Minister" loading="lazy" />
+                  <div class="lead-gallery-overlay">
+                    <div class="lead-gallery-title">Meeting with the Prime Minister</div>
+                    <div class="lead-gallery-desc">Represented university students during infrastructure development discussions with the Hon. Prime Minister of Sri Lanka.</div>
+                  </div>
+                </div>
+
+                <div class="lead-gallery-item"
+                     data-src="Uni4.jpeg"
+                     data-caption="Meeting at the Ministry of Education — Participated in discussions with the Deputy Minister of Education regarding academic development and university facility improvements."
+                     tabindex="0" role="button"
+                     aria-label="Meeting at the Ministry of Education">
+                  <img src="Uni4.jpeg" alt="Meeting at the Ministry of Education" loading="lazy" />
+                  <div class="lead-gallery-overlay">
+                    <div class="lead-gallery-title">Meeting at the Ministry of Education</div>
+                    <div class="lead-gallery-desc">Participated in discussions with the Deputy Minister of Education regarding academic development and university facility improvements.</div>
+                  </div>
+                </div>
+
+              </div><!-- /lead-gallery-row -->
+
+            </div><!-- /lead-gallery -->
+
+            <!-- Leadership Highlight Badges -->
+            <div class="lead-highlight-badges" aria-label="Leadership highlights">
+              <span class="lead-badge">Leadership</span>
+              <span class="lead-badge">Student Representation</span>
+              <span class="lead-badge">Government Meetings</span>
+              <span class="lead-badge">Engineering Leadership</span>
+              <span class="lead-badge">University Development</span>
+              <span class="lead-badge">Event Organization</span>
+              <span class="lead-badge">Team Management</span>
+            </div>
+
+          </div><!-- /leadership-gallery-col -->
+
+        </div><!-- /leadership-layout -->
+      </div>
+    </section>
+
+    <!-- ─────────────────────────────────────
+         9. RESEARCH SECTION
+    ───────────────────────────────────────── -->
+    <section id="research" class="section" aria-labelledby="research-title">
+      <div class="container">
+        <div class="section-label">Research Work</div>
+        <h2 class="section-title" id="research-title">Undergraduate <em>Research</em></h2>
+
+        <article class="research-card mt-2xl reveal">
+          <div class="research-status" aria-label="Research in progress">
+            <span class="status-dot" aria-hidden="true"></span>
+            Ongoing — Undergraduate Research Project
+          </div>
+
+          <h3 class="research-title">
+            Modelling, Development, and Performance Assessment of a Hybrid Powered Thermoelectric Refrigerator
+          </h3>
+
+          <div class="research-grid">
+            <div class="research-block">
+              <div class="research-block-label">Objective</div>
+              <p class="research-block-content" style="text-align:justify;">
+                Deliver a low-cost, portable, and energy-efficient cooling solution for off-grid and rural applications where conventional refrigeration infrastructure is unavailable.
+              </p>
+            </div>
+            <div class="research-block">
+              <div class="research-block-label">Methodology</div>
+              <p class="research-block-content" style="text-align:justify;">
+                Developed a component-level simulation model using MATLAB Simscape &amp; Simulink. Validated model accuracy against prototype measurement data through statistical analysis. Built a virtual testbed to evaluate and optimise design improvements, substantially reducing reliance on repeated physical prototyping.
+              </p>
+            </div>
+            <div class="research-block">
+              <div class="research-block-label">Tools &amp; Technologies</div>
+              <p class="research-block-content">
+                MATLAB Simscape · Simulink · Statistical Validation · Prototype Instrumentation
+              </p>
+            </div>
+          </div>
+
+          <!-- Research Image Gallery -->
+          <div class="research-gallery-label" style="margin-top: var(--space-2xl); margin-bottom: var(--space-md); font-family: var(--font-mono); font-size: var(--text-xs); letter-spacing: 0.1em; text-transform: uppercase; color: var(--clr-accent);">Research Gallery</div>
+          <div class="fp-gallery cols-4" data-gallery-id="research-gallery">
+            <div class="fp-gallery-item" data-src="research1.jpg" data-caption="Experimental Data Collection Under AC Power Operation">
+              <img src="research1.jpg" alt="Experimental Data Collection Under AC Power Operation" loading="lazy" />
+              <div class="fp-gallery-caption">Experimental Data Collection Under AC Power Operation</div>
+            </div>
+            <div class="fp-gallery-item" data-src="research2.jpg" data-caption="CAD Design of Prototype">
+              <img src="research2.jpg" alt="CAD Design of Prototype" loading="lazy" />
+              <div class="fp-gallery-caption">CAD Design of Prototype</div>
+            </div>
+            <div class="fp-gallery-item" data-src="research3.jpg" data-caption="Prototype of Thermoelectric Refrigerator">
+              <img src="research3.jpg" alt="Prototype of Thermoelectric Refrigerator" loading="lazy" />
+              <div class="fp-gallery-caption">Prototype of Thermoelectric Refrigerator</div>
+            </div>
+            <div class="fp-gallery-item" data-src="research4.jpg" data-caption="Design of Thermoelectric Refrigerator">
+              <img src="research4.jpg" alt="Design of Thermoelectric Refrigerator" loading="lazy" />
+              <div class="fp-gallery-caption">Design of Thermoelectric Refrigerator</div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ─────────────────────────────────────
+         10. PORTFOLIO GALLERY
+    ───────────────────────────────────────── -->
+    <section id="gallery" class="section" aria-labelledby="gallery-title">
+      <div class="blueprint-bg" aria-hidden="true"></div>
+      <div class="container" style="position:relative;z-index:1;">
+        <div class="section-label">Portfolio Gallery</div>
+        <h2 class="section-title" id="gallery-title">Visual <em>Showcase</em></h2>
+        <p class="section-subtitle">A collection of engineering designs, industrial automation systems, machine developments, manufacturing projects, and research innovations.</p>
+
+        <div class="gallery-grid mt-2xl stagger">
+
+          <!-- Item 1: Commercial Production — real1 -->
+          <div class="gallery-item" tabindex="0" role="button" aria-label="Commercial Production Running Using the New Machine" data-src="real1.jpg" data-caption="Commercial Production Running Using the New Machine">
+            <img src="real1.jpg" alt="Commercial Production Running Using the New Machine" loading="lazy" />
+            <div class="gallery-overlay" aria-hidden="true">
+              <div class="gallery-overlay-title">Commercial Production Running Using the New Machine</div>
+              <div class="gallery-overlay-sub">Semi-Automatic Shampoo Filling Machine</div>
+            </div>
+          </div>
+
+          <!-- Item 2: Fully Developed Conveyor System — cn2 -->
+          <div class="gallery-item" tabindex="0" role="button" aria-label="Fully Developed Conveyor System" data-src="cn2.jpg" data-caption="Fully Developed Conveyor System">
+            <img src="cn2.jpg" alt="Fully Developed Conveyor System" loading="lazy" />
+            <div class="gallery-overlay" aria-hidden="true">
+              <div class="gallery-overlay-title">Fully Developed Conveyor System</div>
+              <div class="gallery-overlay-sub">VFD · Motor Control · 20-ft System</div>
+            </div>
+          </div>
+
+          <!-- Item 3: Auto Filling Machine Design Discussion — af1 -->
+          <div class="gallery-item" tabindex="0" role="button" aria-label="Auto Filling Machine Design Discussion" data-src="af1.jpg" data-caption="Auto Filling Machine Design Discussion">
+            <img src="af1.jpg" alt="Auto Filling Machine Design Discussion" loading="lazy" />
+            <div class="gallery-overlay" aria-hidden="true">
+              <div class="gallery-overlay-title">Auto Filling Machine Design Discussion</div>
+              <div class="gallery-overlay-sub">SolidWorks · Machine Design</div>
+            </div>
+          </div>
+
+          <!-- Item 4: Cap Dispenser Design — cf1 -->
+          <div class="gallery-item" tabindex="0" role="button" aria-label="Cap Dispenser Design and 3D Printed Component" data-src="cf1.jpg" data-caption="Cap Dispenser Design and 3D Printed Component">
+            <img src="cf1.jpg" alt="Cap Dispenser Design and 3D Printed Component" loading="lazy" />
+            <div class="gallery-overlay" aria-hidden="true">
+              <div class="gallery-overlay-title">Cap Dispenser Design and 3D Printed Component</div>
+              <div class="gallery-overlay-sub">SolidWorks · 3D Printing</div>
+            </div>
+          </div>
+
+          <!-- Item 5: Complete Design of Fully Automatic Filling Machine — af5 -->
+          <div class="gallery-item" tabindex="0" role="button" aria-label="Complete Design of Fully Automatic Filling Machine" data-src="af5.png" data-caption="Complete Design of Fully Automatic Filling Machine">
+            <img src="af5.png" alt="Complete Design of Fully Automatic Filling Machine" loading="lazy" />
+            <div class="gallery-overlay" aria-hidden="true">
+              <div class="gallery-overlay-title">Complete Design of Fully Automatic Filling Machine</div>
+              <div class="gallery-overlay-sub">SolidWorks · Full Assembly Design</div>
+            </div>
+          </div>
+
+          <!-- Item 6: PLC Program Development — plc1 -->
+          <div class="gallery-item" tabindex="0" role="button" aria-label="PLC Program Development" data-src="plc1.png" data-caption="PLC Program Development">
+            <img src="plc1.png" alt="PLC Program Development" loading="lazy" />
+            <div class="gallery-overlay" aria-hidden="true">
+              <div class="gallery-overlay-title">PLC Program Development</div>
+              <div class="gallery-overlay-sub">Siemens TIA Portal · Ladder Logic</div>
+            </div>
+          </div>
+
+          <!-- Item 7: Bronze Award IESL Techno Exhibition 2023 — techno1 -->
+          <div class="gallery-item" tabindex="0" role="button" aria-label="Bronze Award – IESL Techno Exhibition 2023" data-src="techno1.jpg" data-caption="Bronze Award – IESL Techno Exhibition 2023">
+            <img src="techno1.jpg" alt="Bronze Award – IESL Techno Exhibition 2023" loading="lazy" />
+            <div class="gallery-overlay" aria-hidden="true">
+              <div class="gallery-overlay-title">Bronze Award – IESL Techno Exhibition 2023</div>
+              <div class="gallery-overlay-sub">IESL · University of Jaffna</div>
+            </div>
+          </div>
+
+          <!-- Item 8: Control Panel Board of Conveyor System — cn3 -->
+          <div class="gallery-item" tabindex="0" role="button" aria-label="Control Panel Board of Conveyor System" data-src="cn3.jpg" data-caption="Control Panel Board of Conveyor System">
+            <img src="cn3.jpg" alt="Control Panel Board of Conveyor System" loading="lazy" />
+            <div class="gallery-overlay" aria-hidden="true">
+              <div class="gallery-overlay-title">Control Panel Board of Conveyor System</div>
+              <div class="gallery-overlay-sub">Electrical Panel · VFD · Wiring</div>
+            </div>
+          </div>
+
+        </div><!-- /.gallery-grid -->
+      </div>
+    </section>
+
+    <!-- ─────────────────────────────────────
+         11. CONTACT SECTION
+    ───────────────────────────────────────── -->
+    <section id="contact" class="section" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="section-label">Get in Touch</div>
+        <h2 class="section-title" id="contact-title">Let's <em>Connect</em></h2>
+
+        <div class="contact-grid mt-2xl">
+          <!-- Contact info -->
+          <div class="contact-info reveal from-left">
+            <p class="contact-info-intro">
+              Whether you're looking for an engineering intern, a collaborative project partner, or
+              simply want to discuss industrial automation or machine design — I'd love to hear from
+              you. Fill in the form or reach out directly via the channels below.
+            </p>
+
+            <div class="contact-items">
+              <!-- Email -->
+              <a href="mailto:Praveenmalika7@gmail.com?subject=Engineering%20Portfolio%20Inquiry&amp;body=Hello%20Praveen,%0D%0A%0D%0AI%20visited%20your%20engineering%20portfolio%20and%20would%20like%20to%20contact%20you%20regarding%20an%20opportunity.%0D%0A%0D%0ARegards," class="contact-item" aria-label="Send email to Praveenmalika7@gmail.com">
+                <div class="contact-item-icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </div>
+                <div class="contact-item-text">
+                  <span class="contact-item-label">Email</span>
+                  <span class="contact-item-value">Praveenmalika7@gmail.com</span>
+                </div>
+              </a>
+
+              <!-- Phone -->
+              <a href="tel:+94740797588" class="contact-item" aria-label="Call 074 0797 588">
+                <div class="contact-item-icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.35 2 2 0 0 1 3.58 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.56a16 16 0 0 0 6.07 6.07l.82-.82a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                </div>
+                <div class="contact-item-text">
+                  <span class="contact-item-label">Phone</span>
+                  <span class="contact-item-value">074 0797 588</span>
+                </div>
+              </a>
+
+              <!-- LinkedIn -->
+              <a href="http://www.linkedin.com/in/praveen-malika-89613b2a8" target="_blank" rel="noopener noreferrer" class="contact-item" aria-label="LinkedIn profile">
+                <div class="contact-item-icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                </div>
+                <div class="contact-item-text">
+                  <span class="contact-item-label">LinkedIn</span>
+                  <span class="contact-item-value">linkedin.com/in/praveen-malika-89613b2a8</span>
+                </div>
+              </a>
+
+
+            </div>
+          </div>
+
+          <!-- Contact form -->
+          <div class="contact-form-wrap reveal from-right">
+            <form id="contact-form" novalidate aria-label="Contact form">
+              <!-- Name -->
+              <div class="form-group">
+                <label class="form-label" for="form-name">Your Name</label>
+                <input
+                  type="text"
+                  id="form-name"
+                  name="name"
+                  class="form-input"
+                  placeholder="e.g. John Doe"
+                  autocomplete="name"
+                  aria-required="true"
+                  aria-describedby="name-error"
+                />
+                <span class="form-error" id="name-error" role="alert">Please enter your name.</span>
+              </div>
+
+              <!-- Email -->
+              <div class="form-group">
+                <label class="form-label" for="form-email">Email Address</label>
+                <input
+                  type="email"
+                  id="form-email"
+                  name="email"
+                  class="form-input"
+                  placeholder="e.g. john@example.com"
+                  autocomplete="email"
+                  aria-required="true"
+                  aria-describedby="email-error"
+                />
+                <span class="form-error" id="email-error" role="alert">Please enter a valid email address.</span>
+              </div>
+
+              <!-- Message -->
+              <div class="form-group">
+                <label class="form-label" for="form-message">Message</label>
+                <textarea
+                  id="form-message"
+                  name="message"
+                  class="form-textarea"
+                  placeholder="Tell me about your project, opportunity, or question…"
+                  aria-required="true"
+                  aria-describedby="message-error"
+                ></textarea>
+                <span class="form-error" id="message-error" role="alert">Please enter your message (at least 10 characters).</span>
+              </div>
+
+              <button type="submit" id="form-submit" class="btn btn-primary" style="width:100%;justify-content:center;" aria-label="Send message">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                Send Message
+              </button>
+            </form>
+
+            <!-- Success state -->
+            <div class="form-success" id="form-success" role="status" aria-live="polite">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              <div class="form-success-title">Message Sent!</div>
+              <p class="form-success-msg">Thank you for reaching out. I'll get back to you as soon as possible.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main><!-- /main -->
+
+  <!-- ══════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════ -->
+  <footer aria-label="Site footer">
+    <div class="container footer-inner">
+      <!-- Brand -->
+      <div class="footer-brand">
+        <div class="footer-logo">R. A.<span class="accent"> Praveen</span></div>
+        <div class="footer-tagline">Mechanical &amp; Process Engineering</div>
+      </div>
+
+      <!-- Quick links -->
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#research">Research</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <!-- Copyright -->
+      <div class="footer-copy">
+        <span>&copy; <span id="copyright-year">2026</span> R. A. Praveen Malika Wijerathna</span><br>
+        <span class="text-muted">Designed &amp; Built with purpose.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button id="back-to-top" aria-label="Scroll back to top">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

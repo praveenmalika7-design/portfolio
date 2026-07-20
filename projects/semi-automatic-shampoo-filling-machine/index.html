@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semi-Automatic Shampoo Filling Machine Development - R. A. Praveen Malika Wijerathna</title>
+    <meta name="description" content="Industrial Engineering Internship Project: Semi-Automatic Shampoo Filling Machine Development for Hemas Consumer Brands.">
+    <meta property="og:title" content="Semi-Automatic Shampoo Filling Machine Development">
+    <meta property="og:description" content="Industrial Engineering Internship Project: Semi-Automatic Shampoo Filling Machine Development for Hemas Consumer Brands.">
+    <meta property="og:url" content="https://praveenmalika.github.io/portfolio/projects/semi-automatic-shampoo-filling-machine/">
+    <link rel="canonical" href="https://praveenmalika.github.io/portfolio/projects/semi-automatic-shampoo-filling-machine/">
+    
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../project.css">
+</head>
+<body>
+
+    <div class="proj-page-topbar">
+        <a href="../../index.html" class="proj-back-btn" aria-label="Back to Portfolio">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+            <span>Back</span>
+        </a>
+        <div class="proj-topbar-title">Project Details</div>
+        <div class="proj-topbar-right">
+            <button class="proj-theme-btn" id="proj-theme-btn" aria-label="Toggle Theme">
+                <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+            </button>
+        </div>
+    </div>
+
+    <div id="proj-scroll-progress"></div>
+
+    <main class="proj-main">
+        <section class="proj-hero">
+            <div class="proj-hero-inner">
+                <div class="proj-hero-breadcrumb">Portfolio / Projects / Semi-Automatic Shampoo Filling Machine</div>
+                <div class="proj-hero-badges">
+                    <span class="proj-hero-badge">Featured Project</span>
+                    <span class="proj-hero-badge">Machine Design</span>
+                    <span class="proj-hero-badge">Industrial Automation</span>
+                </div>
+                <h1 class="proj-hero-title">Semi-Automatic Shampoo Filling Machine Development</h1>
+                
+                <div class="proj-hero-meta-row">
+                    <div class="proj-hero-meta-item">
+                        <span class="proj-hero-meta-label">Company</span>
+                        <span class="proj-hero-meta-val">Hemas Consumer Brands (Pvt.) Ltd.</span>
+                    </div>
+                    <div class="proj-hero-meta-item">
+                        <span class="proj-hero-meta-label">Duration</span>
+                        <span class="proj-hero-meta-val">Nov 2025 – May 2026 (6 months)</span>
+                    </div>
+                    <div class="proj-hero-meta-item">
+                        <span class="proj-hero-meta-label">Status</span>
+                        <span class="proj-hero-meta-val">Commissioned & In Commercial Production</span>
+                    </div>
+                </div>
+
+                <p class="proj-hero-summary" style="text-align:justify;">
+                    Contributed to the engineering team in designing, developing, and commissioning a Semi-Automatic Shampoo Filling Machine for a high-volume FMCG production environment. The project involved complete machine design using SolidWorks, control system integration using Siemens S7-1500 PLC, HMI development using Siemens WinCC, electrical documentation using EPLAN, servo drive configuration, pneumatic system design, and CIP (Clean-in-Place) system implementation. The machine successfully entered commercial production, achieving significant production capacity improvements.
+                </p>
+            </div>
+        </section>
+
+        <section class="proj-tech-strip">
+            <div class="proj-tech-strip-inner">
+                <span class="proj-tech-label">Core Technologies:</span>
+                <span class="proj-tech-tag">SolidWorks</span>
+                <span class="proj-tech-tag">Siemens S7-1500 PLC</span>
+                <span class="proj-tech-tag">Siemens WinCC HMI</span>
+                <span class="proj-tech-tag">EPLAN</span>
+                <span class="proj-tech-tag">Servo Drive & Motor</span>
+                <span class="proj-tech-tag">Pneumatic Systems</span>
+                <span class="proj-tech-tag">CIP System</span>
+            </div>
+        </section>
+
+        <div class="proj-content">
+            <section class="proj-section reveal">
+                <h2 class="proj-section-title">Engineering Challenge</h2>
+                <div class="proj-section-body">
+                    <p style="text-align:justify;">
+                        The production line required an efficient, hygienic, and reliable shampoo filling solution capable of integrating with existing conveyor infrastructure. The design needed to handle precise volumetric filling of viscous fluids, implement CIP for hygiene compliance, accommodate different bottle sizes, and ensure operator safety.
+                    </p>
+                </div>
+            </section>
+
+            <section class="proj-section reveal">
+                <h2 class="proj-section-title">Project Objectives</h2>
+                <div class="proj-section-body">
+                    <ul class="proj-list">
+                        <li>Design and develop a semi-automatic shampoo filling machine for industrial production</li>
+                        <li>Implement precise volumetric filling using lobe pump technology</li>
+                        <li>Integrate Siemens S7-1500 PLC for automated control and sequencing</li>
+                        <li>Develop an intuitive HMI using Siemens WinCC for operator control</li>
+                        <li>Design electrical control panel and document using EPLAN</li>
+                        <li>Implement CIP (Clean-in-Place) system for hygiene compliance</li>
+                        <li>Commission the machine and validate through production trials</li>
+                        <li>Achieve successful commercial production launch</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="proj-section reveal">
+                <h2 class="proj-section-title">My Responsibilities</h2>
+                <div class="proj-section-body">
+                    <div class="proj-contrib-grid">
+                        <div class="proj-contrib-item">
+                            <svg class="proj-contrib-check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            Performed mechanical design and 3D modelling of machine components using SolidWorks
+                        </div>
+                        <div class="proj-contrib-item">
+                            <svg class="proj-contrib-check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            Developed detailed engineering drawings and assembly documentation
+                        </div>
+                        <div class="proj-contrib-item">
+                            <svg class="proj-contrib-check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            Designed and programmed Siemens S7-1500 PLC control logic using Ladder Diagram (LAD)
+                        </div>
+                        <div class="proj-contrib-item">
+                            <svg class="proj-contrib-check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            Developed HMI screens using Siemens WinCC for operator interface
+                        </div>
+                        <div class="proj-contrib-item">
+                            <svg class="proj-contrib-check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            Designed electrical control panel layout and created comprehensive electrical schematics using EPLAN
+                        </div>
+                        <div class="proj-contrib-item">
+                            <svg class="proj-contrib-check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            Configured servo drive and servo motor parameters for precise positioning
+                        </div>
+                        <div class="proj-contrib-item">
+                            <svg class="proj-contrib-check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            Designed and integrated the pneumatic system for bottle clamping and positioning
+                        </div>
+                        <div class="proj-contrib-item">
+                            <svg class="proj-contrib-check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            Supervised fabrication activities carried out by outsourced contractors
+                        </div>
+                        <div class="proj-contrib-item">
+                            <svg class="proj-contrib-check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            Conducted machine installation, commissioning, and production trials
+                        </div>
+                        <div class="proj-contrib-item">
+                            <svg class="proj-contrib-check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            Coordinated with Production, QA, R&D, and Safety teams throughout the project
+                        </div>
+                        <div class="proj-contrib-item">
+                            <svg class="proj-contrib-check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            Managed engineering design modifications based on production trial feedback
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="proj-section reveal">
+                <h2 class="proj-section-title">Engineering Design Process</h2>
+                <div class="proj-section-body">
+                    <ol class="proj-list" style="list-style-type: decimal; padding-left: 1.5rem;">
+                        <li><strong>Requirement Analysis:</strong> Collaborated with Production and QA teams to define filling accuracy, hygiene, and throughput requirements</li>
+                        <li><strong>Conceptual Design:</strong> Developed machine concept incorporating lobe pump filling, conveyor integration, and servo positioning</li>
+                        <li><strong>3D Modelling & Drawings:</strong> Created detailed SolidWorks models and engineering drawings for fabrication</li>
+                        <li><strong>Electrical Design:</strong> Designed control panel and electrical schematics using EPLAN</li>
+                        <li><strong>PLC Programming:</strong> Programmed control logic in Ladder Diagram for filling sequences, CIP, safety interlocks</li>
+                        <li><strong>HMI Development:</strong> Designed operator interface screens in Siemens WinCC</li>
+                        <li><strong>Fabrication Supervision:</strong> Coordinated with contractors during machine fabrication</li>
+                        <li><strong>Installation & Commissioning:</strong> Installed, wired, and commissioned the machine on the production floor</li>
+                        <li><strong>Production Trials:</strong> Conducted filling accuracy tests, throughput validation, and CIP cycle testing</li>
+                        <li><strong>Commercial Launch:</strong> Machine successfully entered commercial production</li>
+                    </ol>
+                </div>
+            </section>
+
+            <section class="proj-section reveal">
+                <h2 class="proj-section-title">Video Demonstration</h2>
+                <div class="proj-section-body">
+                    <div class="proj-video-wrap">
+                        <video preload="metadata" aria-label="Machine Operation During Production Trial">
+                            <source src="../../Video1.mp4" type="video/mp4" />
+                            Your browser does not support HTML5 video.
+                        </video>
+                        <div class="vp-play-overlay" role="button" aria-label="Play video" tabindex="0">
+                            <div class="play-circle">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                            </div>
+                        </div>
+                        <div class="fp-video-controls">
+                            <div class="vp-progress" role="slider" aria-label="Video progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" tabindex="0">
+                                <div class="vp-progress-fill"></div>
+                            </div>
+                            <div class="fp-video-btn-row">
+                                <button class="fp-video-btn vp-play-btn" aria-label="Play / Pause">
+                                    <svg class="vp-play-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                                    <svg class="vp-pause-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" style="display:none"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>
+                                </button>
+                                <span class="vp-time fp-video-time">0:00 / 0:00</span>
+                                <button class="fp-video-btn vp-fullscreen-btn" aria-label="Fullscreen">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="proj-section reveal">
+                <h2 class="proj-section-title">Production & Machine Photos</h2>
+                <div class="proj-section-body">
+                    <div class="proj-gallery cols-3">
+                        <div class="proj-gallery-item" tabindex="0" data-src="../../real1.jpg" data-caption="Commercial Production Running Using the New Machine">
+                            <img src="../../real1.jpg" alt="Commercial Production Running Using the New Machine" loading="lazy">
+                            <div class="proj-gallery-cap">Commercial Production Running Using the New Machine</div>
+                        </div>
+                        <div class="proj-gallery-item" tabindex="0" data-src="../../real2.jpg" data-caption="Commercial Filling Production in Operation">
+                            <img src="../../real2.jpg" alt="Commercial Filling Production in Operation" loading="lazy">
+                            <div class="proj-gallery-cap">Commercial Filling Production in Operation</div>
+                        </div>
+                        <div class="proj-gallery-item" tabindex="0" data-src="../../real3.jpg" data-caption="Machine During Production Trial">
+                            <img src="../../real3.jpg" alt="Machine During Production Trial" loading="lazy">
+                            <div class="proj-gallery-cap">Machine During Production Trial</div>
+                        </div>
+                        <div class="proj-gallery-item" tabindex="0" data-src="../../real4.jpg" data-caption="Machine Installation View">
+                            <img src="../../real4.jpg" alt="Machine Installation View" loading="lazy">
+                            <div class="proj-gallery-cap">Machine Installation View</div>
+                        </div>
+                        <div class="proj-gallery-item" tabindex="0" data-src="../../SASF5.jpg" data-caption="Machine Component Assembly">
+                            <img src="../../SASF5.jpg" alt="Machine Component Assembly" loading="lazy">
+                            <div class="proj-gallery-cap">Machine Component Assembly</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="proj-section reveal">
+                <h2 class="proj-section-title">Engineering Design (SolidWorks)</h2>
+                <div class="proj-section-body">
+                    <div class="proj-gallery cols-3">
+                        <div class="proj-gallery-item" tabindex="0" data-src="../../SASF1.png" data-caption="Semi-Automatic Shampoo Filling Machine 3D Design">
+                            <img src="../../SASF1.png" alt="Semi-Automatic Shampoo Filling Machine 3D Design" loading="lazy">
+                            <div class="proj-gallery-cap">Semi-Automatic Shampoo Filling Machine 3D Design</div>
+                        </div>
+                        <div class="proj-gallery-item" tabindex="0" data-src="../../SASF2.png" data-caption="Machine Frame and Structure Design">
+                            <img src="../../SASF2.png" alt="Machine Frame and Structure Design" loading="lazy">
+                            <div class="proj-gallery-cap">Machine Frame and Structure Design</div>
+                        </div>
+                        <div class="proj-gallery-item" tabindex="0" data-src="../../cip.png" data-caption="CIP (Clean-in-Place) System Design">
+                            <img src="../../cip.png" alt="CIP (Clean-in-Place) System Design" loading="lazy">
+                            <div class="proj-gallery-cap">CIP (Clean-in-Place) System Design</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="proj-section reveal">
+                <h2 class="proj-section-title">Electrical & Control Panel</h2>
+                <div class="proj-section-body">
+                    <div class="proj-gallery cols-2">
+                        <div class="proj-gallery-item" tabindex="0" data-src="../../e1.png" data-caption="Electrical Panel Design">
+                            <img src="../../e1.png" alt="Electrical Panel Design" loading="lazy">
+                            <div class="proj-gallery-cap">Electrical Panel Design</div>
+                        </div>
+                        <div class="proj-gallery-item" tabindex="0" data-src="../../e2.png" data-caption="Control Panel Wiring Layout">
+                            <img src="../../e2.png" alt="Control Panel Wiring Layout" loading="lazy">
+                            <div class="proj-gallery-cap">Control Panel Wiring Layout</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="proj-section reveal">
+                <h2 class="proj-section-title">PLC Program Screenshots</h2>
+                <div class="proj-section-body">
+                    <div class="proj-gallery cols-4">
+                        <div class="proj-gallery-item" tabindex="0" data-src="../../plc1.png" data-caption="PLC Program — Main Control Logic">
+                            <img src="../../plc1.png" alt="PLC Program — Main Control Logic" loading="lazy">
+                            <div class="proj-gallery-cap">PLC Program — Main Control Logic</div>
+                        </div>
+                        <div class="proj-gallery-item" tabindex="0" data-src="../../plc2.png" data-caption="PLC Program — Filling Sequence">
+                            <img src="../../plc2.png" alt="PLC Program — Filling Sequence" loading="lazy">
+                            <div class="proj-gallery-cap">PLC Program — Filling Sequence</div>
+                        </div>
+                        <div class="proj-gallery-item" tabindex="0" data-src="../../plc3.png" data-caption="PLC Program — CIP Control">
+                            <img src="../../plc3.png" alt="PLC Program — CIP Control" loading="lazy">
+                            <div class="proj-gallery-cap">PLC Program — CIP Control</div>
+                        </div>
+                        <div class="proj-gallery-item" tabindex="0" data-src="../../plc4.png" data-caption="PLC Program — Safety Interlock">
+                            <img src="../../plc4.png" alt="PLC Program — Safety Interlock" loading="lazy">
+                            <div class="proj-gallery-cap">PLC Program — Safety Interlock</div>
+                        </div>
+                        <div class="proj-gallery-item" tabindex="0" data-src="../../plc6.png" data-caption="PLC Program — Servo Drive Control">
+                            <img src="../../plc6.png" alt="PLC Program — Servo Drive Control" loading="lazy">
+                            <div class="proj-gallery-cap">PLC Program — Servo Drive Control</div>
+                        </div>
+                        <div class="proj-gallery-item" tabindex="0" data-src="../../plc7.png" data-caption="PLC Program — Conveyor Integration">
+                            <img src="../../plc7.png" alt="PLC Program — Conveyor Integration" loading="lazy">
+                            <div class="proj-gallery-cap">PLC Program — Conveyor Integration</div>
+                        </div>
+                        <div class="proj-gallery-item" tabindex="0" data-src="../../plc8.png" data-caption="PLC Program — Alarm Management">
+                            <img src="../../plc8.png" alt="PLC Program — Alarm Management" loading="lazy">
+                            <div class="proj-gallery-cap">PLC Program — Alarm Management</div>
+                        </div>
+                        <div class="proj-gallery-item" tabindex="0" data-src="../../plc9.png" data-caption="PLC Program — HMI Communication">
+                            <img src="../../plc9.png" alt="PLC Program — HMI Communication" loading="lazy">
+                            <div class="proj-gallery-cap">PLC Program — HMI Communication</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="proj-section reveal">
+                <h2 class="proj-section-title">HMI Screens</h2>
+                <div class="proj-section-body">
+                    <div class="proj-gallery cols-4">
+                        <div class="proj-gallery-item" tabindex="0" data-src="../../hmi1.png" data-caption="HMI Main Screen — Production Dashboard">
+                            <img src="../../hmi1.png" alt="HMI Main Screen — Production Dashboard" loading="lazy">
+                            <div class="proj-gallery-cap">HMI Main Screen — Production Dashboard</div>
+                        </div>
+                        <div class="proj-gallery-item" tabindex="0" data-src="../../hmi2.png" data-caption="HMI Filling Parameter Settings">
+                            <img src="../../hmi2.png" alt="HMI Filling Parameter Settings" loading="lazy">
+                            <div class="proj-gallery-cap">HMI Filling Parameter Settings</div>
+                        </div>
+                        <div class="proj-gallery-item" tabindex="0" data-src="../../hmi3.png" data-caption="HMI CIP Control Screen">
+                            <img src="../../hmi3.png" alt="HMI CIP Control Screen" loading="lazy">
+                            <div class="proj-gallery-cap">HMI CIP Control Screen</div>
+                        </div>
+                        <div class="proj-gallery-item" tabindex="0" data-src="../../hmi4.png" data-caption="HMI Alarm and Diagnostics Screen">
+                            <img src="../../hmi4.png" alt="HMI Alarm and Diagnostics Screen" loading="lazy">
+                            <div class="proj-gallery-cap">HMI Alarm and Diagnostics Screen</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="proj-section reveal">
+                <h2 class="proj-section-title">Engineering Outcomes</h2>
+                <div class="proj-section-body">
+                    <div class="proj-outcomes-grid">
+                        <div class="proj-outcome-card">
+                            <div class="proj-outcome-title">Production Success</div>
+                            <div class="proj-outcome-text">Machine successfully commissioned and entered commercial production.</div>
+                        </div>
+                        <div class="proj-outcome-card">
+                            <div class="proj-outcome-title">Increased Capacity</div>
+                            <div class="proj-outcome-text">Achieved significant production capacity improvement on the filling line.</div>
+                        </div>
+                        <div class="proj-outcome-card">
+                            <div class="proj-outcome-title">Hygiene & Safety</div>
+                            <div class="proj-outcome-text">Implemented automated CIP system ensuring hygiene compliance and enhanced operator safety through interlocked control systems.</div>
+                        </div>
+                        <div class="proj-outcome-card">
+                            <div class="proj-outcome-title">Quality & Documentation</div>
+                            <div class="proj-outcome-text">Reduced manual filling errors and delivered a complete engineering documentation package.</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="proj-section reveal">
+                <h2 class="proj-section-title">Skills Demonstrated</h2>
+                <div class="proj-section-body">
+                    <div class="proj-skills-wrap">
+                        <span class="proj-skill-badge">Machine Design</span>
+                        <span class="proj-skill-badge">3D Modelling</span>
+                        <span class="proj-skill-badge">PLC Programming</span>
+                        <span class="proj-skill-badge">HMI Development</span>
+                        <span class="proj-skill-badge">Electrical Panel Design</span>
+                        <span class="proj-skill-badge">EPLAN</span>
+                        <span class="proj-skill-badge">Servo Configuration</span>
+                        <span class="proj-skill-badge">Pneumatic Systems</span>
+                        <span class="proj-skill-badge">CIP Systems</span>
+                        <span class="proj-skill-badge">Commissioning</span>
+                        <span class="proj-skill-badge">Fabrication Supervision</span>
+                        <span class="proj-skill-badge">Engineering Documentation</span>
+                        <span class="proj-skill-badge">Cross-functional Collaboration</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="proj-section reveal">
+                <div class="proj-qr-section">
+                    <img class="proj-qr-img" src="https://api.qrserver.com/v1/create-qr-code/?size=130x130&data=https://praveenmalika.github.io/portfolio/projects/semi-automatic-shampoo-filling-machine/" alt="QR Code to this project">
+                    <div class="proj-qr-text">
+                        Scan to view this project on your mobile device.
+                        <div class="proj-qr-url">https://praveenmalika.github.io/portfolio/projects/semi-automatic-shampoo-filling-machine/</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="proj-nav-section">
+                <div></div>
+                <a href="../fully-automatic-shampoo-filling-machine/" class="proj-nav-btn next">
+                    <div class="proj-nav-direction">Next Project</div>
+                    <div class="proj-nav-title">Fully Automatic Shampoo Filling Machine Design</div>
+                </a>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="proj-footer">
+        <p>&copy; 2026 R. A. Praveen Malika Wijerathna. All rights reserved.</p>
+    </footer>
+
+    <!-- Lightbox -->
+    <div class="proj-lightbox" id="proj-lightbox" role="dialog" aria-modal="true" aria-label="Image lightbox" aria-hidden="true">
+        <button class="proj-lb-close" id="proj-lb-close" aria-label="Close">&times;</button>
+        <button class="proj-lb-prev" id="proj-lb-prev" aria-label="Previous">&#8249;</button>
+        <button class="proj-lb-next" id="proj-lb-next" aria-label="Next">&#8250;</button>
+        <div class="proj-lb-inner">
+            <img class="proj-lb-img" id="proj-lb-img" src="" alt="">
+            <div class="proj-lb-caption" id="proj-lb-caption"></div>
+            <div class="proj-lb-counter" id="proj-lb-counter"></div>
+        </div>
+    </div>
+
+    <script src="../project.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+# Netlify redirects — clean URL support for project pages
+# Allows /projects/project-name without trailing slash
+
+/projects/semi-automatic-shampoo-filling-machine    /projects/semi-automatic-shampoo-filling-machine/index.html    200
+/projects/fully-automatic-shampoo-filling-machine   /projects/fully-automatic-shampoo-filling-machine/index.html   200
+/projects/cap-feeder-elevator-machine               /projects/cap-feeder-elevator-machine/index.html               200
+/projects/master-bag-packing-machine                /projects/master-bag-packing-machine/index.html                200
+/projects/hybrid-thermoelectric-refrigerator        /projects/hybrid-thermoelectric-refrigerator/index.html        200
